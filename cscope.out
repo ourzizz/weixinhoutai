@@ -1,0 +1,3196 @@
+cscope 16 C:\Users\Administrator\Desktop\staffmanager               0000017805
+	@employeeform.cpp
+
+1 
+	~<QtSql
+>
+
+2 
+	~<QtWidg‘s
+>
+
+3 
+	~"em¶oy“fÜm.h
+"
+
+5 
+	gEm¶oy“FÜm
+::
+	$Em¶oy“FÜm
+(
+id
+, 
+QWidg‘
+ *
+·»Á
+)
+
+6 : 
+	$QDŸlog
+(
+·»Á
+)
+
+8 
+ÇmeEd™
+ = 
+Ãw
+ 
+QLšeEd™
+;
+
+10 
+ÇmeLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("Na&me:"));
+
+11 
+ÇmeLab–
+->
+	`£tBuddy
+(
+ÇmeEd™
+);
+
+13 
+d•¬tm’tComboBox
+ = 
+Ãw
+ 
+QComboBox
+;
+
+15 
+d•¬tm’tLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("Depar&tment:"));
+
+16 
+d•¬tm’tLab–
+->
+	`£tBuddy
+(
+d•¬tm’tComboBox
+);
+
+18 
+ex‹nsiÚLšeEd™
+ = 
+Ãw
+ 
+QLšeEd™
+;
+
+19 
+ex‹nsiÚLšeEd™
+->
+	`£tV®id©Ü
+(
+Ãw
+ 
+	`QIÁV®id©Ü
+(0, 99999, 
+this
+));
+
+21 
+ex‹nsiÚLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("E&xtension:"));
+
+22 
+ex‹nsiÚLab–
+->
+	`£tBuddy
+(
+ex‹nsiÚLšeEd™
+);
+
+24 
+emaEd™
+ = 
+Ãw
+ 
+QLšeEd™
+;
+
+26 
+emaLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("&Email:"));
+
+27 
+emaLab–
+->
+	`£tBuddy
+(
+emaEd™
+);
+
+29 
+¡¬tD©eEd™
+ = 
+Ãw
+ 
+QD©eEd™
+;
+
+30 
+¡¬tD©eEd™
+->
+	`£tC®’d¬Pİup
+(
+Œue
+);
+
+31 
+QD©e
+ 
+today
+ = QD©e::
+	`cu¼’tD©e
+();
+
+32 
+¡¬tD©eEd™
+->
+	`£tD©eRªge
+(
+today
+.
+	`addDays
+(-90),oday.addDays(90));
+
+34 
+¡¬tD©eLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("&Start Date:"));
+
+35 
+¡¬tD©eLab–
+->
+	`£tBuddy
+(
+¡¬tD©eEd™
+);
+
+37 
+fœ¡Bu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("<< &First"));
+
+38 
+´eviousBu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("< &Previous"));
+
+39 
+ÃxtBu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("&Next >"));
+
+40 
+Ï¡Bu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("&Last >>"));
+
+42 
+addBu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("&Add"));
+
+43 
+d–‘eBu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("&Delete"));
+
+44 
+şo£Bu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("&Close"));
+
+46 
+bu‰ÚBox
+ = 
+Ãw
+ 
+QDŸlogBu‰ÚBox
+;
+
+47 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+addBu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+AùiÚRŞe
+);
+
+48 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+d–‘eBu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+AùiÚRŞe
+);
+
+49 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+şo£Bu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+Acû±RŞe
+);
+
+51 
+bËMod–
+ = 
+Ãw
+ 
+	`QSqlR–©iÚ®TabËMod–
+(
+this
+);
+
+52 
+bËMod–
+->
+	`£tTabË
+("employee");
+
+53 
+bËMod–
+->
+	`£tR–©iÚ
+(
+Em¶oy“_D•¬tm’tId
+,
+
+54 
+	`QSqlR–©iÚ
+("department", "id", "name"));
+
+55 
+bËMod–
+->
+	`£tSÜt
+(
+Em¶oy“_Name
+, 
+Qt
+::
+AsûndšgOrd”
+);
+
+56 
+bËMod–
+->
+	`£Ëù
+();
+
+58 
+QSqlTabËMod–
+ *
+»ÏtiÚMod–
+ =
+
+59 
+bËMod–
+->
+	`»ÏtiÚMod–
+(
+Em¶oy“_D•¬tm’tId
+);
+
+60 
+d•¬tm’tComboBox
+->
+	`£tMod–
+(
+»ÏtiÚMod–
+);
+
+61 
+d•¬tm’tComboBox
+->
+	`£tMod–CŞumn
+(
+
+62 
+»ÏtiÚMod–
+->
+	`f›ldIndex
+("name"));
+
+64 
+m­³r
+ = 
+Ãw
+ 
+	`QD©aWidg‘M­³r
+(
+this
+);
+
+65 
+m­³r
+->
+	`£tSubm™PŞicy
+(
+QD©aWidg‘M­³r
+::
+AutoSubm™
+);
+
+66 
+m­³r
+->
+	`£tMod–
+(
+bËMod–
+);
+
+67 
+m­³r
+->
+	`£tI‹mD–eg©e
+(
+Ãw
+ 
+	`QSqlR–©iÚ®D–eg©e
+(
+this
+));
+
+68 
+m­³r
+->
+	`addM­pšg
+(
+ÇmeEd™
+, 
+Em¶oy“_Name
+);
+
+69 
+m­³r
+->
+	`addM­pšg
+(
+d•¬tm’tComboBox
+, 
+Em¶oy“_D•¬tm’tId
+);
+
+70 
+m­³r
+->
+	`addM­pšg
+(
+ex‹nsiÚLšeEd™
+, 
+Em¶oy“_Ex‹nsiÚ
+);
+
+71 
+m­³r
+->
+	`addM­pšg
+(
+emaEd™
+, 
+Em¶oy“_Ema
+);
+
+72 
+m­³r
+->
+	`addM­pšg
+(
+¡¬tD©eEd™
+, 
+Em¶oy“_S¹D©e
+);
+
+74 ià(
+id
+ != -1) {
+
+75 
+row
+ = 0;„ow < 
+bËMod–
+->
+	`rowCouÁ
+(); ++row) {
+
+76 
+QSqlRecÜd
+ 
+»cÜd
+ = 
+bËMod–
+->
+	`»cÜd
+(
+row
+);
+
+77 ià(
+»cÜd
+.
+	`v®ue
+(
+Em¶oy“_Id
+).
+	`toIÁ
+(è=ğ
+id
+) {
+
+78 
+m­³r
+->
+	`£tCu¼’tIndex
+(
+row
+);
+
+83 
+m­³r
+->
+	`toFœ¡
+();
+
+86 
+	`cÚÃù
+(
+fœ¡Bu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()), 
+m­³r
+, 
+	`SLOT
+(
+	`toFœ¡
+()));
+
+87 
+	`cÚÃù
+(
+´eviousBu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()),
+
+88 
+m­³r
+, 
+	`SLOT
+(
+	`toP»vious
+()));
+
+89 
+	`cÚÃù
+(
+ÃxtBu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()), 
+m­³r
+, 
+	`SLOT
+(
+	`toNext
+()));
+
+90 
+	`cÚÃù
+(
+Ï¡Bu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()), 
+m­³r
+, 
+	`SLOT
+(
+	`toLa¡
+()));
+
+91 
+	`cÚÃù
+(
+addBu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()), 
+this
+, 
+	`SLOT
+(
+	`addEm¶oy“
+()));
+
+92 
+	`cÚÃù
+(
+d–‘eBu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()),
+
+93 
+this
+, 
+	`SLOT
+(
+	`d–‘eEm¶oy“
+()));
+
+94 
+	`cÚÃù
+(
+şo£Bu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()), 
+this
+, 
+	`SLOT
+(
+	`acû±
+()));
+
+96 
+QHBoxLayout
+ *
+tİBu‰ÚLayout
+ = 
+Ãw
+ QHBoxLayout;
+
+97 
+tİBu‰ÚLayout
+->
+	`£tCÚ‹ÁsM¬gšs
+(20, 0, 20, 5);
+
+98 
+tİBu‰ÚLayout
+->
+	`addSŒ‘ch
+();
+
+99 
+tİBu‰ÚLayout
+->
+	`addWidg‘
+(
+fœ¡Bu‰Ú
+);
+
+100 
+tİBu‰ÚLayout
+->
+	`addWidg‘
+(
+´eviousBu‰Ú
+);
+
+101 
+tİBu‰ÚLayout
+->
+	`addWidg‘
+(
+ÃxtBu‰Ú
+);
+
+102 
+tİBu‰ÚLayout
+->
+	`addWidg‘
+(
+Ï¡Bu‰Ú
+);
+
+103 
+tİBu‰ÚLayout
+->
+	`addSŒ‘ch
+();
+
+105 
+QGridLayout
+ *
+mašLayout
+ = 
+Ãw
+ QGridLayout;
+
+106 
+mašLayout
+->
+	`addLayout
+(
+tİBu‰ÚLayout
+, 0, 0, 1, 3);
+
+107 
+mašLayout
+->
+	`addWidg‘
+(
+ÇmeLab–
+, 1, 0);
+
+108 
+mašLayout
+->
+	`addWidg‘
+(
+ÇmeEd™
+, 1, 1, 1, 2);
+
+109 
+mašLayout
+->
+	`addWidg‘
+(
+d•¬tm’tLab–
+, 2, 0);
+
+110 
+mašLayout
+->
+	`addWidg‘
+(
+d•¬tm’tComboBox
+, 2, 1, 1, 2);
+
+111 
+mašLayout
+->
+	`addWidg‘
+(
+ex‹nsiÚLab–
+, 3, 0);
+
+112 
+mašLayout
+->
+	`addWidg‘
+(
+ex‹nsiÚLšeEd™
+, 3, 1);
+
+113 
+mašLayout
+->
+	`addWidg‘
+(
+emaLab–
+, 4, 0);
+
+114 
+mašLayout
+->
+	`addWidg‘
+(
+emaEd™
+, 4, 1, 1, 2);
+
+115 
+mašLayout
+->
+	`addWidg‘
+(
+¡¬tD©eLab–
+, 5, 0);
+
+116 
+mašLayout
+->
+	`addWidg‘
+(
+¡¬tD©eEd™
+, 5, 1);
+
+117 
+mašLayout
+->
+	`addWidg‘
+(
+bu‰ÚBox
+, 7, 0, 1, 3);
+
+118 
+mašLayout
+->
+	`£tRowMšimumHeight
+(6, 10);
+
+119 
+mašLayout
+->
+	`£tRowSŒ‘ch
+(6, 1);
+
+120 
+mašLayout
+->
+	`£tCŞumnSŒ‘ch
+(2, 1);
+
+121 
+	`£tLayout
+(
+mašLayout
+);
+
+123 ià(
+id
+ == -1) {
+
+124 
+ÃxtBu‰Ú
+->
+	`£tFocus
+();
+
+126 
+ÇmeEd™
+->
+	`£tFocus
+();
+
+129 
+	`£tWšdowT™Ë
+(
+	`Œ
+("Edit Employees"));
+
+130 
+	}
+}
+
+132 
+	gEm¶oy“FÜm
+::
+	$dÚe
+(
+»suÉ
+)
+
+134 
+m­³r
+->
+	`subm™
+();
+
+135 
+QDŸlog
+::
+	`dÚe
+(
+»suÉ
+);
+
+136 
+	}
+}
+
+138 
+	gEm¶oy“FÜm
+::
+	$addEm¶oy“
+()
+
+140 
+row
+ = 
+m­³r
+->
+	`cu¼’tIndex
+();
+
+141 
+m­³r
+->
+	`subm™
+();
+
+142 
+bËMod–
+->
+	`š£¹Row
+(
+row
+);
+
+143 
+m­³r
+->
+	`£tCu¼’tIndex
+(
+row
+);
+
+145 
+ÇmeEd™
+->
+	`ş—r
+();
+
+146 
+ex‹nsiÚLšeEd™
+->
+	`ş—r
+();
+
+147 
+¡¬tD©eEd™
+->
+	`£tD©e
+(
+QD©e
+::
+	`cu¼’tD©e
+());
+
+148 
+ÇmeEd™
+->
+	`£tFocus
+();
+
+149 
+	}
+}
+
+151 
+	gEm¶oy“FÜm
+::
+	$d–‘eEm¶oy“
+()
+
+153 
+row
+ = 
+m­³r
+->
+	`cu¼’tIndex
+();
+
+154 
+bËMod–
+->
+	`»moveRow
+(
+row
+);
+
+155 
+m­³r
+->
+	`subm™
+();
+
+156 
+m­³r
+->
+	`£tCu¼’tIndex
+(
+	`qMš
+(
+row
+, 
+bËMod–
+->
+	`rowCouÁ
+() - 1));
+
+157 
+	}
+}
+
+	@employeeform.h
+
+1 #iâdeà
+EMPLOYEEFORM_H
+
+
+2 
+	#EMPLOYEEFORM_H
+
+
+	)
+
+3 
+	~<QtWidg‘s
+>
+
+4 
+	~<QDŸlog
+>
+
+6 
+şass
+ 
+	gQComboBox
+;
+
+7 
+şass
+ 
+	gQD©aWidg‘M­³r
+;
+
+8 
+şass
+ 
+	gQD©eEd™
+;
+
+9 
+şass
+ 
+	gQDŸlogBu‰ÚBox
+;
+
+10 
+şass
+ 
+	gQLab–
+;
+
+11 
+şass
+ 
+	gQLšeEd™
+;
+
+12 
+şass
+ 
+	gQPushBu‰Ú
+;
+
+13 
+şass
+ 
+	gQSqlR–©iÚ®TabËMod–
+;
+
+16 
+	mEm¶oy“_Id
+ = 0,
+
+17 
+	mEm¶oy“_Name
+ = 1,
+
+18 
+	mEm¶oy“_D•¬tm’tId
+ = 2,
+
+19 
+	mEm¶oy“_Ex‹nsiÚ
+ = 3,
+
+20 
+	mEm¶oy“_Ema
+ = 4,
+
+21 
+	mEm¶oy“_S¹D©e
+ = 5
+
+24 şas 
+	cEm¶oy“FÜm
+ : 
+public
+ 
+QDŸlog
+
+
+26 
+Q_OBJECT
+
+
+28 
+public
+:
+
+29 
+Em¶oy“FÜm
+(
+id
+, 
+QWidg‘
+ *
+·»Á
+ = 0);
+
+31 
+dÚe
+(
+»suÉ
+);
+
+33 
+´iv©e
+ 
+	m¦Ùs
+:
+
+34 
+addEm¶oy“
+();
+
+35 
+d–‘eEm¶oy“
+();
+
+37 
+	m´iv©e
+:
+
+38 
+QSqlR–©iÚ®TabËMod–
+ *
+bËMod–
+;
+
+39 
+QD©aWidg‘M­³r
+ *
+	mm­³r
+;
+
+40 
+QLab–
+ *
+	mÇmeLab–
+;
+
+41 
+QLab–
+ *
+	md•¬tm’tLab–
+;
+
+42 
+QLab–
+ *
+	mex‹nsiÚLab–
+;
+
+43 
+QLab–
+ *
+	memaLab–
+;
+
+44 
+QLab–
+ *
+	m¡¬tD©eLab–
+;
+
+45 
+QLšeEd™
+ *
+	mÇmeEd™
+;
+
+46 
+QComboBox
+ *
+	md•¬tm’tComboBox
+;
+
+47 
+QLšeEd™
+ *
+	mex‹nsiÚLšeEd™
+;
+
+48 
+QLšeEd™
+ *
+	memaEd™
+;
+
+49 
+QD©eEd™
+ *
+	m¡¬tD©eEd™
+;
+
+50 
+QPushBu‰Ú
+ *
+	mfœ¡Bu‰Ú
+;
+
+51 
+QPushBu‰Ú
+ *
+	m´eviousBu‰Ú
+;
+
+52 
+QPushBu‰Ú
+ *
+	mÃxtBu‰Ú
+;
+
+53 
+QPushBu‰Ú
+ *
+	mÏ¡Bu‰Ú
+;
+
+54 
+QPushBu‰Ú
+ *
+	maddBu‰Ú
+;
+
+55 
+QPushBu‰Ú
+ *
+	md–‘eBu‰Ú
+;
+
+56 
+QPushBu‰Ú
+ *
+	mşo£Bu‰Ú
+;
+
+57 
+QDŸlogBu‰ÚBox
+ *
+	mbu‰ÚBox
+;
+
+	@main.cpp
+
+1 
+	~<QtGui
+>
+
+2 
+	~<QtSql
+>
+
+3 
+	~<c¡dlib
+>
+
+4 
+	~<QtWidg‘s
+>
+
+6 
+	~"mašfÜm.h
+"
+
+8 
+boŞ
+ 
+	$ü—‹CÚÃùiÚ
+()
+
+10 
+QSqlD©aba£
+ 
+db
+ = QSqlD©aba£::
+	`addD©aba£
+("QSQLITE");
+
+11 
+db
+.
+	`£tD©aba£Name
+("personnel.dat");
+
+12 ià(!
+db
+.
+	`İ’
+()) {
+
+13 
+QMes§geBox
+::
+	`w¬nšg
+(0, 
+QObjeù
+::
+	`Œ
+("Database Error"),
+
+14 
+db
+.
+	`Ï¡E¼Ü
+().
+	`‹xt
+());
+
+15  
+çl£
+;
+
+17  
+Œue
+;
+
+18 
+	}
+}
+
+20 
+	$ü—‹FakeD©a
+()
+
+22 
+QSŒšgLi¡
+ 
+Çmes
+;
+
+23 
+Çmes
+ << "Eabha Biddell" << "Prentice Hutchison"
+
+44 
+QProg»ssDŸlog
+ 
+´og»ss
+;
+
+45 
+´og»ss
+.
+	`£tWšdowMod®™y
+(
+Qt
+::
+WšdowMod®
+);
+
+46 
+´og»ss
+.
+	`£tWšdowT™Ë
+(
+QObjeù
+::
+	`Œ
+("Staff Manager"));
+
+47 
+´og»ss
+.
+	`£tLab–Text
+(
+QObjeù
+::
+	`Œ
+("Creating database..."));
+
+48 
+´og»ss
+.
+	`£tMšimum
+(0);
+
+49 
+´og»ss
+.
+	`£tMaximum
+(
+Çmes
+.
+	`couÁ
+() + 6);
+
+50 
+´og»ss
+.
+	`£tV®ue
+(1);
+
+51 
+qAµ
+->
+	`´oûssEv’ts
+();
+
+52 
+QSqlQu”y
+ 
+qu”y
+;
+
+53 
+qu”y
+.
+	`exec
+("DROP TABLE department");
+
+54 
+qu”y
+.
+	`exec
+("DROP TABLEƒmployee");
+
+55 
+qu”y
+.
+	`exec
+("DROP TABLE†ocation");
+
+57 
+´og»ss
+.
+	`£tV®ue
+(2);
+
+58 
+qAµ
+->
+	`´oûssEv’ts
+();
+
+59 
+qu”y
+.
+	`exec
+("CREATE TABLE†ocation ("
+
+62 
+´og»ss
+.
+	`£tV®ue
+(3);
+
+63 
+qAµ
+->
+	`´oûssEv’ts
+();
+
+64 
+qu”y
+.
+	`exec
+("CREATE TABLE department ("
+
+69 
+´og»ss
+.
+	`£tV®ue
+(4);
+
+70 
+qAµ
+->
+	`´oûssEv’ts
+();
+
+71 
+qu”y
+.
+	`exec
+("CREATE TABLEƒmployee ("
+
+80 
+´og»ss
+.
+	`£tV®ue
+(5);
+
+81 
+qAµ
+->
+	`´oûssEv’ts
+();
+
+82 
+qu”y
+.
+	`exec
+("INSERT INTO†ocation (name) VALUES ("
+
+84 
+qu”y
+.
+	`exec
+("INSERT INTO†ocation (name) VALUES ("
+
+86 
+qu”y
+.
+	`exec
+("INSERT INTO†ocation (name) VALUES ("
+
+88 
+qu”y
+.
+	`exec
+("INSERT INTO†ocation (name) VALUES ("
+
+90 
+qu”y
+.
+	`exec
+("INSERT INTO department (name,†ocationid) VALUES ("
+
+92 
+qu”y
+.
+	`exec
+("INSERT INTO department (name,†ocationid) VALUES ("
+
+94 
+qu”y
+.
+	`exec
+("INSERT INTO department (name,†ocationid) VALUES ("
+
+96 
+qu”y
+.
+	`exec
+("INSERT INTO department (name,†ocationid) VALUES ("
+
+98 
+qu”y
+.
+	`exec
+("INSERT INTO department (name,†ocationid) VALUES ("
+
+101 
+´og»ss
+.
+	`£tV®ue
+(6);
+
+102 
+qAµ
+->
+	`´oûssEv’ts
+();
+
+103 
+couÁ
+ = 0;
+
+104 
+qu”y
+.
+	`´•¬e
+("INSERT INTOƒmployee (name, departmentid, "
+
+108 
+	`fÜ—ch
+ (
+QSŒšg
+ 
+Çme
+, 
+Çmes
+) {
+
+109 
+qu”y
+.
+	`bšdV®ue
+(":Çme", 
+Çme
+);
+
+110 
+qu”y
+.
+	`bšdV®ue
+(":d•¬tm’tid", 1 + (
+¡d
+::
+	`¿nd
+() % 5));
+
+111 
+qu”y
+.
+	`bšdV®ue
+(":ex‹nsiÚ", 400 + (
+¡d
+::
+	`¿nd
+() % 100));
+
+112 
+qu”y
+.
+	`bšdV®ue
+(":ema", 
+Çme
+.
+	`toLow”
+().
+	`»¶aû
+(" ", ".") +
+
+114 
+qu”y
+.
+	`bšdV®ue
+(":startdate",
+
+115 
+QD©e
+::
+	`cu¼’tD©e
+().
+	`addDays
+(-(
+¡d
+::
+	`¿nd
+() % 3600)));
+
+116 
+qu”y
+.
+	`exec
+();
+
+117 ++
+couÁ
+;
+
+118 
+´og»ss
+.
+	`£tV®ue
+(
+couÁ
+ + 6);
+
+120 
+´og»ss
+.
+	`£tV®ue
+Õrog»ss.
+	`maximum
+());
+
+121 
+qAµ
+->
+	`´oûssEv’ts
+();
+
+122 
+	}
+}
+
+124 
+	$maš
+(
+¬gc
+, *
+¬gv
+[])
+
+126 
+QAµliÿtiÚ
+ 
+	`­p
+(
+¬gc
+, 
+¬gv
+);
+
+128 
+boŞ
+ 
+exi¡šgD©a
+ = 
+QFe
+::
+	`exi¡s
+("personnel.dat");
+
+129 ià(!
+	`ü—‹CÚÃùiÚ
+())
+
+131 ià(!
+exi¡šgD©a
+)
+
+132 
+	`ü—‹FakeD©a
+();
+
+134 
+MašFÜm
+ 
+fÜm
+;
+
+135 
+fÜm
+.
+	`»size
+(500, 600);
+
+136 
+fÜm
+.
+	`show
+();
+
+137  
+­p
+.
+	`exec
+();
+
+138 
+	}
+}
+
+	@mainform.cpp
+
+1 
+	~<QtGui
+>
+
+2 
+	~<QtSql
+>
+
+4 
+	~"em¶oy“fÜm.h
+"
+
+5 
+	~"mašfÜm.h
+"
+
+7 
+	gMašFÜm
+::
+	$MašFÜm
+()
+
+9 
+	`ü—‹D•¬tm’tPª–
+();
+
+10 
+	`ü—‹Em¶oy“Pª–
+();
+
+12 
+¥l™‹r
+ = 
+Ãw
+ 
+	`QS¶™‹r
+(
+Qt
+::
+V”tiÿl
+);
+
+13 
+¥l™‹r
+->
+	`£tF¿meStyË
+(
+QF¿me
+::
+StyËdPª–
+);
+
+14 
+¥l™‹r
+->
+	`addWidg‘
+(
+d•¬tm’tPª–
+);
+
+15 
+¥l™‹r
+->
+	`addWidg‘
+(
+em¶oy“Pª–
+);
+
+17 
+addBu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("&Add Dept."));
+
+18 
+d–‘eBu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("&Delete Dept."));
+
+19 
+ed™Bu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("&Edit Employees..."));
+
+20 
+qu™Bu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("&Quit"));
+
+22 
+bu‰ÚBox
+ = 
+Ãw
+ 
+QDŸlogBu‰ÚBox
+;
+
+23 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+addBu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+AùiÚRŞe
+);
+
+24 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+d–‘eBu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+AùiÚRŞe
+);
+
+25 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+ed™Bu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+AùiÚRŞe
+);
+
+26 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+qu™Bu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+Acû±RŞe
+);
+
+28 
+	`cÚÃù
+(
+addBu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()), 
+this
+, 
+	`SLOT
+(
+	`addD•¬tm’t
+()));
+
+29 
+	`cÚÃù
+(
+d–‘eBu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()),
+
+30 
+this
+, 
+	`SLOT
+(
+	`d–‘eD•¬tm’t
+()));
+
+31 
+	`cÚÃù
+(
+ed™Bu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()), 
+this
+, 
+	`SLOT
+(
+	`ed™Em¶oy“s
+()));
+
+32 
+	`cÚÃù
+(
+qu™Bu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()), 
+this
+, 
+	`SLOT
+(
+	`şo£
+()));
+
+34 
+QVBoxLayout
+ *
+mašLayout
+ = 
+Ãw
+ QVBoxLayout;
+
+35 
+mašLayout
+->
+	`addWidg‘
+(
+¥l™‹r
+);
+
+36 
+mašLayout
+->
+	`addWidg‘
+(
+bu‰ÚBox
+);
+
+37 
+	`£tLayout
+(
+mašLayout
+);
+
+39 
+	`£tWšdowT™Ë
+(
+	`Œ
+("Staff Manager"));
+
+40 
+d•¬tm’tV›w
+->
+	`£tCu¼’tIndex
+(
+d•¬tm’tMod–
+->
+	`šdex
+(0, 0));
+
+41 
+	}
+}
+
+43 
+	gMašFÜm
+::
+	$upd©eEm¶oy“V›w
+()
+
+45 
+QMod–Index
+ 
+šdex
+ = 
+d•¬tm’tV›w
+->
+	`cu¼’tIndex
+();
+
+46 ià(
+šdex
+.
+	`isV®id
+()) {
+
+47 
+QSqlRecÜd
+ 
+»cÜd
+ = 
+d•¬tm’tMod–
+->
+	`»cÜd
+(
+šdex
+.
+	`row
+());
+
+48 
+id
+ = 
+»cÜd
+.
+	`v®ue
+("id").
+	`toIÁ
+();
+
+49 
+em¶oy“Mod–
+->
+	`£tF‹r
+(
+	`QSŒšg
+("d•¬tm’tid = %1").
+	`¬g
+(
+id
+));
+
+50 
+em¶oy“Lab–
+->
+	`£tText
+(
+	`Œ
+("E&mployees inhe %1 Department")
+
+51 .
+	`¬g
+(
+»cÜd
+.
+	`v®ue
+("Çme").
+	`toSŒšg
+()));
+
+53 
+em¶oy“Mod–
+->
+	`£tF‹r
+("departmentid = -1");
+
+54 
+em¶oy“Lab–
+->
+	`£tText
+(
+	`Œ
+("E&mployees"));
+
+56 
+em¶oy“Mod–
+->
+	`£Ëù
+();
+
+57 
+em¶oy“V›w
+->
+	`hÜizÚlH—d”
+()->
+	`£tVisibË
+(
+
+58 
+em¶oy“Mod–
+->
+	`rowCouÁ
+() > 0);
+
+59 
+	}
+}
+
+61 
+	gMašFÜm
+::
+	$addD•¬tm’t
+()
+
+63 
+row
+ = 
+d•¬tm’tMod–
+->
+	`rowCouÁ
+();
+
+64 
+d•¬tm’tMod–
+->
+	`š£¹Row
+(
+row
+);
+
+65 
+QMod–Index
+ 
+šdex
+ = 
+d•¬tm’tMod–
+->
+	`šdex
+(
+row
+, 
+D•¬tm’t_Name
+);
+
+66 
+d•¬tm’tV›w
+->
+	`£tCu¼’tIndex
+(
+šdex
+);
+
+67 
+d•¬tm’tV›w
+->
+	`ed™
+(
+šdex
+);
+
+68 
+	}
+}
+
+70 
+	gMašFÜm
+::
+	$d–‘eD•¬tm’t
+()
+
+72 
+QMod–Index
+ 
+šdex
+ = 
+d•¬tm’tV›w
+->
+	`cu¼’tIndex
+();
+
+73 ià(!
+šdex
+.
+	`isV®id
+())
+
+76 
+QSqlD©aba£
+::
+	`d©aba£
+().
+	`Œª§ùiÚ
+();
+
+77 
+QSqlRecÜd
+ 
+»cÜd
+ = 
+d•¬tm’tMod–
+->
+	`»cÜd
+(
+šdex
+.
+	`row
+());
+
+78 
+id
+ = 
+»cÜd
+.
+	`v®ue
+(
+D•¬tm’t_Id
+).
+	`toIÁ
+();
+
+79 
+numEm¶oy“s
+ = 0;
+
+81 
+QSqlQu”y
+ 
+	`qu”y
+(
+	`QSŒšg
+("SELECT COUNT(*) FROMƒmployee "
+
+82 "WHERE d•¬tm’tid = %1").
+	`¬g
+(
+id
+));
+
+83 ià(
+qu”y
+.
+	`Ãxt
+())
+
+84 
+numEm¶oy“s
+ = 
+qu”y
+.
+	`v®ue
+(0).
+	`toIÁ
+();
+
+85 ià(
+numEm¶oy“s
+ > 0) {
+
+86 
+r
+ = 
+QMes§geBox
+::
+	`w¬nšg
+(
+this
+, 
+	`Œ
+("Delete Department"),
+
+87 
+	`Œ
+("Delete %1‡nd‡ll itsƒmployees?")
+
+88 .
+	`¬g
+(
+»cÜd
+.
+	`v®ue
+(
+D•¬tm’t_Name
+).
+	`toSŒšg
+()),
+
+89 
+QMes§geBox
+::
+Yes
+ | QMes§geBox::
+No
+);
+
+90 ià(
+r
+ =ğ
+QMes§geBox
+::
+No
+) {
+
+91 
+QSqlD©aba£
+::
+	`d©aba£
+().
+	`rŞlback
+();
+
+95 
+qu”y
+.
+	`exec
+(
+	`QSŒšg
+("DELETE FROMƒmployee "
+
+96 "WHERE d•¬tm’tid = %1").
+	`¬g
+(
+id
+));
+
+99 
+d•¬tm’tMod–
+->
+	`»moveRow
+(
+šdex
+.
+	`row
+());
+
+100 
+d•¬tm’tMod–
+->
+	`subm™AÎ
+();
+
+101 
+QSqlD©aba£
+::
+	`d©aba£
+().
+	`comm™
+();
+
+103 
+	`upd©eEm¶oy“V›w
+();
+
+104 
+d•¬tm’tV›w
+->
+	`£tFocus
+();
+
+105 
+	}
+}
+
+107 
+	gMašFÜm
+::
+	$ed™Em¶oy“s
+()
+
+109 
+em¶oy“Id
+ = -1;
+
+110 
+QMod–Index
+ 
+šdex
+ = 
+em¶oy“V›w
+->
+	`cu¼’tIndex
+();
+
+111 ià(
+šdex
+.
+	`isV®id
+()) {
+
+112 
+QSqlRecÜd
+ 
+»cÜd
+ = 
+em¶oy“Mod–
+->
+	`»cÜd
+(
+šdex
+.
+	`row
+());
+
+113 
+em¶oy“Id
+ = 
+»cÜd
+.
+	`v®ue
+(
+Em¶oy“_Id
+).
+	`toIÁ
+();
+
+116 
+Em¶oy“FÜm
+ 
+	`fÜm
+(
+em¶oy“Id
+, 
+this
+);
+
+117 
+fÜm
+.
+	`exec
+();
+
+118 
+	`upd©eEm¶oy“V›w
+();
+
+119 
+	}
+}
+
+121 
+	gMašFÜm
+::
+	$ü—‹D•¬tm’tPª–
+()
+
+123 
+d•¬tm’tPª–
+ = 
+Ãw
+ 
+QWidg‘
+;
+
+125 
+d•¬tm’tMod–
+ = 
+Ãw
+ 
+	`QSqlR–©iÚ®TabËMod–
+(
+this
+);
+
+126 
+d•¬tm’tMod–
+->
+	`£tTabË
+("department");
+
+127 
+d•¬tm’tMod–
+->
+	`£tR–©iÚ
+(
+D•¬tm’t_LoÿtiÚId
+,
+
+128 
+	`QSqlR–©iÚ
+("location", "id", "name"));
+
+129 
+d•¬tm’tMod–
+->
+	`£tSÜt
+(
+D•¬tm’t_Name
+, 
+Qt
+::
+AsûndšgOrd”
+);
+
+130 
+d•¬tm’tMod–
+->
+	`£tH—d”D©a
+(
+D•¬tm’t_Name
+, 
+Qt
+::
+HÜizÚl
+,
+
+131 
+	`Œ
+("Dept."));
+
+132 
+d•¬tm’tMod–
+->
+	`£tH—d”D©a
+(
+D•¬tm’t_LoÿtiÚId
+,
+
+133 
+Qt
+::
+HÜizÚl
+, 
+	`Œ
+("Location"));
+
+134 
+d•¬tm’tMod–
+->
+	`£Ëù
+();
+
+136 
+d•¬tm’tV›w
+ = 
+Ãw
+ 
+QTabËV›w
+;
+
+137 
+d•¬tm’tV›w
+->
+	`£tMod–
+(
+d•¬tm’tMod–
+);
+
+138 
+d•¬tm’tV›w
+->
+	`£tI‹mD–eg©e
+(
+Ãw
+ 
+	`QSqlR–©iÚ®D–eg©e
+(
+this
+));
+
+139 
+d•¬tm’tV›w
+->
+	`£tS–eùiÚMode
+(
+
+140 
+QAb¡¿ùI‹mV›w
+::
+SšgËS–eùiÚ
+);
+
+141 
+d•¬tm’tV›w
+->
+	`£tS–eùiÚBehaviÜ
+(
+QAb¡¿ùI‹mV›w
+::
+S–eùRows
+);
+
+142 
+d•¬tm’tV›w
+->
+	`£tCŞumnHidd’
+(
+D•¬tm’t_Id
+, 
+Œue
+);
+
+143 
+d•¬tm’tV›w
+->
+	`»sizeCŞumnsToCÚ‹Ás
+();
+
+144 
+d•¬tm’tV›w
+->
+	`hÜizÚlH—d”
+()->
+	`£tSŒ‘chLa¡SeùiÚ
+(
+Œue
+);
+
+146 
+d•¬tm’tLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("Depar&tments"));
+
+147 
+d•¬tm’tLab–
+->
+	`£tBuddy
+(
+d•¬tm’tV›w
+);
+
+149 
+	`cÚÃù
+(
+d•¬tm’tV›w
+->
+	`£ËùiÚMod–
+(),
+
+150 
+	`SIGNAL
+(
+	`cu¼’tRowChªged
+(cÚ¡ 
+QMod–Index
+ &,
+
+151 cÚ¡ 
+QMod–Index
+ &)),
+
+152 
+this
+, 
+	`SLOT
+(
+	`upd©eEm¶oy“V›w
+()));
+
+154 
+QVBoxLayout
+ *
+Ïyout
+ = 
+Ãw
+ QVBoxLayout;
+
+155 
+Ïyout
+->
+	`addWidg‘
+(
+d•¬tm’tLab–
+);
+
+156 
+Ïyout
+->
+	`addWidg‘
+(
+d•¬tm’tV›w
+);
+
+157 
+d•¬tm’tPª–
+->
+	`£tLayout
+(
+Ïyout
+);
+
+158 
+	}
+}
+
+160 
+	gMašFÜm
+::
+	$ü—‹Em¶oy“Pª–
+()
+
+162 
+em¶oy“Pª–
+ = 
+Ãw
+ 
+QWidg‘
+;
+
+164 
+em¶oy“Mod–
+ = 
+Ãw
+ 
+	`QSqlR–©iÚ®TabËMod–
+(
+this
+);
+
+165 
+em¶oy“Mod–
+->
+	`£tTabË
+("employee");
+
+166 
+em¶oy“Mod–
+->
+	`£tR–©iÚ
+(
+Em¶oy“_D•¬tm’tId
+,
+
+167 
+	`QSqlR–©iÚ
+("department", "id", "name"));
+
+168 
+em¶oy“Mod–
+->
+	`£tSÜt
+(
+Em¶oy“_Name
+, 
+Qt
+::
+AsûndšgOrd”
+);
+
+169 
+em¶oy“Mod–
+->
+	`£tH—d”D©a
+(
+Em¶oy“_Name
+, 
+Qt
+::
+HÜizÚl
+,
+
+170 
+	`Œ
+("Name"));
+
+171 
+em¶oy“Mod–
+->
+	`£tH—d”D©a
+(
+Em¶oy“_Ex‹nsiÚ
+, 
+Qt
+::
+HÜizÚl
+,
+
+172 
+	`Œ
+("Ext."));
+
+173 
+em¶oy“Mod–
+->
+	`£tH—d”D©a
+(
+Em¶oy“_Ema
+, 
+Qt
+::
+HÜizÚl
+,
+
+174 
+	`Œ
+("Email"));
+
+176 
+em¶oy“V›w
+ = 
+Ãw
+ 
+QTabËV›w
+;
+
+177 
+em¶oy“V›w
+->
+	`£tMod–
+(
+em¶oy“Mod–
+);
+
+178 
+em¶oy“V›w
+->
+	`£tS–eùiÚMode
+(
+QAb¡¿ùI‹mV›w
+::
+SšgËS–eùiÚ
+);
+
+179 
+em¶oy“V›w
+->
+	`£tS–eùiÚBehaviÜ
+(
+QAb¡¿ùI‹mV›w
+::
+S–eùRows
+);
+
+180 
+em¶oy“V›w
+->
+	`£tEd™Trigg”s
+(
+QAb¡¿ùI‹mV›w
+::
+NoEd™Trigg”s
+);
+
+181 
+em¶oy“V›w
+->
+	`hÜizÚlH—d”
+()->
+	`£tSŒ‘chLa¡SeùiÚ
+(
+Œue
+);
+
+182 
+em¶oy“V›w
+->
+	`£tCŞumnHidd’
+(
+Em¶oy“_Id
+, 
+Œue
+);
+
+183 
+em¶oy“V›w
+->
+	`£tCŞumnHidd’
+(
+Em¶oy“_D•¬tm’tId
+, 
+Œue
+);
+
+184 
+em¶oy“V›w
+->
+	`£tCŞumnHidd’
+(
+Em¶oy“_S¹D©e
+, 
+Œue
+);
+
+186 
+em¶oy“Lab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("E&mployees"));
+
+187 
+em¶oy“Lab–
+->
+	`£tBuddy
+(
+em¶oy“V›w
+);
+
+189 
+QVBoxLayout
+ *
+Ïyout
+ = 
+Ãw
+ QVBoxLayout;
+
+190 
+Ïyout
+->
+	`addWidg‘
+(
+em¶oy“Lab–
+);
+
+191 
+Ïyout
+->
+	`addWidg‘
+(
+em¶oy“V›w
+);
+
+192 
+em¶oy“Pª–
+->
+	`£tLayout
+(
+Ïyout
+);
+
+193 
+	}
+}
+
+	@mainform.h
+
+1 #iâdeà
+MAINFORM_H
+
+
+2 
+	#MAINFORM_H
+
+
+	)
+
+4 
+	~<QWidg‘
+>
+
+6 
+şass
+ 
+	gQDŸlogBu‰ÚBox
+;
+
+7 
+şass
+ 
+	gQLab–
+;
+
+8 
+şass
+ 
+	gQMod–Index
+;
+
+9 
+şass
+ 
+	gQPushBu‰Ú
+;
+
+10 
+şass
+ 
+	gQS¶™‹r
+;
+
+11 
+şass
+ 
+	gQSqlR–©iÚ®TabËMod–
+;
+
+12 
+şass
+ 
+	gQTabËV›w
+;
+
+15 
+	mD•¬tm’t_Id
+ = 0,
+
+16 
+	mD•¬tm’t_Name
+ = 1,
+
+17 
+	mD•¬tm’t_LoÿtiÚId
+ = 2
+
+20 şas 
+	cMašFÜm
+ : 
+public
+ 
+QWidg‘
+
+
+22 
+Q_OBJECT
+
+
+24 
+public
+:
+
+25 
+MašFÜm
+();
+
+27 
+´iv©e
+ 
+	m¦Ùs
+:
+
+28 
+upd©eEm¶oy“V›w
+();
+
+29 
+addD•¬tm’t
+();
+
+30 
+d–‘eD•¬tm’t
+();
+
+31 
+ed™Em¶oy“s
+();
+
+33 
+	m´iv©e
+:
+
+34 
+ü—‹D•¬tm’tPª–
+();
+
+35 
+ü—‹Em¶oy“Pª–
+();
+
+37 
+QSqlR–©iÚ®TabËMod–
+ *
+	md•¬tm’tMod–
+;
+
+38 
+QSqlR–©iÚ®TabËMod–
+ *
+	mem¶oy“Mod–
+;
+
+39 
+QWidg‘
+ *
+	md•¬tm’tPª–
+;
+
+40 
+QWidg‘
+ *
+	mem¶oy“Pª–
+;
+
+41 
+QLab–
+ *
+	md•¬tm’tLab–
+;
+
+42 
+QLab–
+ *
+	mem¶oy“Lab–
+;
+
+43 
+QTabËV›w
+ *
+	md•¬tm’tV›w
+;
+
+44 
+QTabËV›w
+ *
+	mem¶oy“V›w
+;
+
+45 
+QS¶™‹r
+ *
+	m¥l™‹r
+;
+
+46 
+QPushBu‰Ú
+ *
+	maddBu‰Ú
+;
+
+47 
+QPushBu‰Ú
+ *
+	md–‘eBu‰Ú
+;
+
+48 
+QPushBu‰Ú
+ *
+	med™Bu‰Ú
+;
+
+49 
+QPushBu‰Ú
+ *
+	mqu™Bu‰Ú
+;
+
+50 
+QDŸlogBu‰ÚBox
+ *
+	mbu‰ÚBox
+;
+
+	@
+1
+.
+0
+5
+65
+employeeform.cpp
+employeeform.h
+main.cpp
+mainform.cpp
+mainform.h
