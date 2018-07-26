@@ -2,6 +2,7 @@
 #include <QtSql>
 #include <String>
 #include "employeeform.h"
+#include "fileform.h"
 #include "mainform.h"
 
 MainForm::MainForm()
@@ -18,9 +19,9 @@ MainForm::MainForm()
     //kaoshisplitter = new QSplitter(Qt::Vertical);
     //kaoshisplitter->addWidget(kaoshiPanel);
 
-    addButton = new QPushButton(tr("&Add Dept."));
-    deleteButton = new QPushButton(tr("&Delete Dept."));
-    editButton = new QPushButton(tr("&Edit msgs..."));
+    addButton = new QPushButton(tr("&添加文件."));
+    deleteButton = new QPushButton(tr("&删除文件."));
+    editButton = new QPushButton(tr("编辑消息"));
     quitButton = new QPushButton(tr("&Quit"));
 
     buttonBox = new QDialogButtonBox;
@@ -132,11 +133,8 @@ void MainForm::editmsgs()
 void MainForm::createFilePanel()
 {/*{{{*/
     filePanel = new QWidget;
-
     fileModel = new QSqlRelationalTableModel(this);
     fileModel->setTable("ksfile");
-    //fileModel->setRelation(1,
-    //QSqlRelation("kstype", "ksid", "ksname"));
     fileModel->setSort(Ksfile_ksid, Qt::AscendingOrder);
     //fileModel->setHeaderData(Ksfile_ksid, Qt::Horizontal,
     //tr("ksid."));
@@ -154,6 +152,8 @@ void MainForm::createFilePanel()
     fileView->resizeColumnsToContents();
     fileView->setEditTriggers(QAbstractItemView::NoEditTriggers);
     fileView->horizontalHeader()->setStretchLastSection(true);
+    fileView->setColumnHidden(0, true);
+    fileView->setColumnHidden(1, true);
 
     fileLabel = new QLabel(tr("Depar&tments"));
     fileLabel->setBuddy(fileView);
@@ -175,14 +175,14 @@ void MainForm::createMsgPanel()
     msgModel = new QSqlRelationalTableModel(this);
     msgModel->setTable("ksmsg");
     msgModel->setRelation(3,
-            QSqlRelation("ksfile","ksfileid","ksfileid"));
-    //msgModel->setSort(msg_Name, Qt::AscendingOrder);
-    //msgModel->setHeaderData(2, Qt::Horizontal,
-    //tr("Name"));
-    //msgModel->setHeaderData(3, Qt::Horizontal,
-    //tr("Ext."));
-    //msgModel->setHeaderData(6, Qt::Horizontal,
-    //tr("Email"));
+            QSqlRelation("ksfile","ksfileid","ksfileid")); //列名不能写错,如果第三个参数给的是string类型那么toint就失败了
+    msgModel->setSort(Msg_Id, Qt::AscendingOrder);
+    msgModel->setHeaderData(1, Qt::Horizontal,
+    tr("消息内容"));
+    msgModel->setHeaderData(2, Qt::Horizontal,
+    tr("发布时间"));
+    msgModel->setHeaderData(5, Qt::Horizontal,
+    tr("失效时间"));
 
     msgView = new QTableView;
     msgView->setModel(msgModel);
@@ -190,9 +190,9 @@ void MainForm::createMsgPanel()
     msgView->setSelectionBehavior(QAbstractItemView::SelectRows);
     msgView->setEditTriggers(QAbstractItemView::NoEditTriggers);
     msgView->horizontalHeader()->setStretchLastSection(true);
-    //msgView->setColumnHidden(0, true);
-    //msgView->setColumnHidden(3, true);
-    //msgView->setColumnHidden(4, true);
+    msgView->setColumnHidden(0, true);
+    msgView->setColumnHidden(3, true);
+    msgView->setColumnHidden(4, true);
 
     msgLabel = new QLabel(tr("E&mployees"));
     msgLabel->setBuddy(msgView);
@@ -202,7 +202,6 @@ void MainForm::createMsgPanel()
     layout->addWidget(msgView);
     msgPanel->setLayout(layout);
 }/*}}}*/
-
 
 void MainForm::createKaoshiPanel() 
 {/*{{{*/
@@ -248,6 +247,4 @@ void MainForm::updateFileView()
     fileModel->select();
     fileView->horizontalHeader()->setVisible(
             fileModel->rowCount() > 0);
-
-
 }/*}}}*/

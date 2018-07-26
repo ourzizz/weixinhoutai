@@ -1,9 +1,9 @@
 #include <QtSql>
 #include <QtWidgets>
-#include "employeeform.h"
+#include "FileForm.h"
 #include <QMessageBox>
 
-EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
+FileForm::FileForm(int id,int fileid,QWidget *parent)
     : QDialog(parent)
 {/*{{{*/
     nameEdit = new QLineEdit; //姓名表单输入框
@@ -11,14 +11,14 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
     nameLabel->setBuddy(nameEdit);
 
     departmentComboBox = new QComboBox;/*{{{*/ //下拉列表不用管
-    departmentLabel = new QLabel(tr("所属文件"));
-    departmentLabel->setBuddy(departmentComboBox);
+    pubtimeLabel = new QLabel(tr("所属文件"));
+    pubtimeLabel->setBuddy(departmentComboBox);
 
-    extensionLineEdit = new QLineEdit;
-    extensionLineEdit->setValidator(new QIntValidator(0, 99999, this));
+    nameLineEdit = new QLineEdit;
+    nameLineEdit->setValidator(new QIntValidator(0, 99999, this));
 
     extensionLabel = new QLabel(tr("发布时间"));
-    extensionLabel->setBuddy(extensionLineEdit);
+    extensionLabel->setBuddy(nameLineEdit);
 
     emailEdit = new QLineEdit;
     emailLabel = new QLabel(tr("所属考试"));
@@ -65,7 +65,7 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
     mapper->setItemDelegate(new QSqlRelationalDelegate(this));
     mapper->addMapping(nameEdit, Msg_Msgcontent);
     mapper->addMapping(departmentComboBox, Msg_Fileid);
-    mapper->addMapping(extensionLineEdit, Msg_msgpubtime);
+    mapper->addMapping(nameLineEdit, Msg_msgpubtime);
     mapper->addMapping(emailEdit, Msg_Ksid);
     mapper->addMapping(startDateEdit, Msg_Deadtime);
 
@@ -86,9 +86,9 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
             //mapper, SLOT(toPrevious()));
     //connect(nextButton, SIGNAL(clicked()), mapper, SLOT(toNext()));
     //connect(lastButton, SIGNAL(clicked()), mapper, SLOT(toLast()));
-    connect(addButton, SIGNAL(clicked()), this, SLOT(addEmployee()));
+    connect(addButton, SIGNAL(clicked()), this, SLOT(addFile()));
     connect(deleteButton, SIGNAL(clicked()),
-            this, SLOT(deleteEmployee()));
+            this, SLOT(deleteFile()));
     connect(closeButton, SIGNAL(clicked()), this, SLOT(accept()));
 
     //QHBoxLayout *topButtonLayout = new QHBoxLayout;
@@ -104,10 +104,10 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
     //mainLayout->addLayout(topButtonLayout, 0, 0, 1, 3);
     mainLayout->addWidget(nameLabel, 1, 0);
     mainLayout->addWidget(nameEdit, 1, 1, 1, 2);
-    mainLayout->addWidget(departmentLabel, 2, 0);
+    mainLayout->addWidget(pubtimeLabel, 2, 0);
     mainLayout->addWidget(departmentComboBox, 2, 1, 1, 2);
     mainLayout->addWidget(extensionLabel, 3, 0);
-    mainLayout->addWidget(extensionLineEdit, 3, 1);
+    mainLayout->addWidget(nameLineEdit, 3, 1);
     mainLayout->addWidget(emailLabel, 4, 0);
     mainLayout->addWidget(emailEdit, 4, 1, 1, 2);
     mainLayout->addWidget(startDateLabel, 5, 0);
@@ -129,13 +129,13 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
     setWindowTitle(tr("消息管理"));
 }/*}}}*/
 
-void EmployeeForm::done(int result)
+void FileForm::done(int result)
 {/*{{{*/
     mapper->submit();
     QDialog::done(result);
 }/*}}}*/
 
-void EmployeeForm::addEmployee()
+void FileForm::addFile()
 {/*{{{*/
     int row = mapper->currentIndex();
     mapper->submit();
@@ -143,12 +143,12 @@ void EmployeeForm::addEmployee()
     mapper->setCurrentIndex(row);
 
     nameEdit->clear();
-    extensionLineEdit->clear();
+    nameLineEdit->clear();
     startDateEdit->setDate(QDate::currentDate());
     nameEdit->setFocus();
 }/*}}}*/
 
-void EmployeeForm::deleteEmployee()
+void FileForm::deleteFile()
 {/*{{{*/
     int row = mapper->currentIndex();
     tableModel->removeRow(row);
