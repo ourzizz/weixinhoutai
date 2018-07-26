@@ -1,4 +1,4 @@
-cscope 16 C:\Qt\Qt5.7.1\5.7\mingw53_32\myproj\weixinhoutai               0000016858
+cscope 16 $HOME\Desktop\qtdev\weixinhoutai               0000026279
 	@employeeform.cpp
 
 1 
@@ -13,25 +13,31 @@ cscope 16 C:\Qt\Qt5.7.1\5.7\mingw53_32\myproj\weixinhoutai               0000016
 	~"em¶oy“fÜm.h
 "
 
-5 
+4 
+	~<QMes§geBox
+>
+
+6 
 	gEm¶oy“FÜm
 ::
 	$Em¶oy“FÜm
 (
 id
-, 
+,
+feid
+,
 QWidg‘
  *
 ·»Á
 )
 
-6 : 
+7 : 
 	$QDŸlog
 (
 ·»Á
 )
 
-8 
+9 
 ÇmeEd™
  = 
 Ãw
@@ -47,7 +53,7 @@ QLšeEd™
 	`QLab–
 (
 	`Œ
-("Na&me:"));
+("æ¶ˆæ¯å†…å®¹:"));
 
 11 
 ÇmeLab–
@@ -65,7 +71,7 @@ d•¬tm’tComboBox
 QComboBox
 ;
 
-15 
+14 
 d•¬tm’tLab–
  = 
 Ãw
@@ -73,9 +79,9 @@ d•¬tm’tLab–
 	`QLab–
 (
 	`Œ
-("Depar&tment:"));
+("æ‰€å±æ–‡ä»¶"));
 
-16 
+15 
 d•¬tm’tLab–
 ->
 	`£tBuddy
@@ -83,7 +89,7 @@ d•¬tm’tLab–
 d•¬tm’tComboBox
 );
 
-18 
+17 
 ex‹nsiÚLšeEd™
  = 
 Ãw
@@ -91,7 +97,7 @@ ex‹nsiÚLšeEd™
 QLšeEd™
 ;
 
-19 
+18 
 ex‹nsiÚLšeEd™
 ->
 	`£tV®id©Ü
@@ -103,7 +109,7 @@ ex‹nsiÚLšeEd™
 this
 ));
 
-21 
+20 
 ex‹nsiÚLab–
  = 
 Ãw
@@ -111,9 +117,9 @@ ex‹nsiÚLab–
 	`QLab–
 (
 	`Œ
-("E&xtension:"));
+("å‘å¸ƒæ—¶é—´"));
 
-22 
+21 
 ex‹nsiÚLab–
 ->
 	`£tBuddy
@@ -121,7 +127,7 @@ ex‹nsiÚLab–
 ex‹nsiÚLšeEd™
 );
 
-24 
+23 
 emaEd™
  = 
 Ãw
@@ -129,7 +135,7 @@ emaEd™
 QLšeEd™
 ;
 
-26 
+24 
 emaLab–
  = 
 Ãw
@@ -137,9 +143,9 @@ emaLab–
 	`QLab–
 (
 	`Œ
-("&Email:"));
+("æ‰€å±è€ƒè¯•"));
 
-27 
+25 
 emaLab–
 ->
 	`£tBuddy
@@ -147,7 +153,7 @@ emaLab–
 emaEd™
 );
 
-29 
+27 
 ¡¬tD©eEd™
  = 
 Ãw
@@ -155,7 +161,7 @@ emaEd™
 QD©eEd™
 ;
 
-30 
+28 
 ¡¬tD©eEd™
 ->
 	`£tC®’d¬Pİup
@@ -163,7 +169,7 @@ QD©eEd™
 Œue
 );
 
-31 
+29 
 QD©e
  
 today
@@ -171,7 +177,7 @@ today
 	`cu¼’tD©e
 ();
 
-32 
+30 
 ¡¬tD©eEd™
 ->
 	`£tD©eRªge
@@ -181,7 +187,7 @@ today
 	`addDays
 (-90),oday.addDays(90));
 
-34 
+31 
 ¡¬tD©eLab–
  = 
 Ãw
@@ -189,9 +195,9 @@ today
 	`QLab–
 (
 	`Œ
-("&Start Date:"));
+("&å¤±æ•ˆæ—¶é—´:"));
 
-35 
+32 
 ¡¬tD©eLab–
 ->
 	`£tBuddy
@@ -199,47 +205,7 @@ today
 ¡¬tD©eEd™
 );
 
-37 
-fœ¡Bu‰Ú
- = 
-Ãw
- 
-	`QPushBu‰Ú
-(
-	`Œ
-("<< &First"));
-
-38 
-´eviousBu‰Ú
- = 
-Ãw
- 
-	`QPushBu‰Ú
-(
-	`Œ
-("< &Previous"));
-
 39 
-ÃxtBu‰Ú
- = 
-Ãw
- 
-	`QPushBu‰Ú
-(
-	`Œ
-("&Next >"));
-
-40 
-Ï¡Bu‰Ú
- = 
-Ãw
- 
-	`QPushBu‰Ú
-(
-	`Œ
-("&Last >>"));
-
-42 
 addBu‰Ú
  = 
 Ãw
@@ -249,7 +215,7 @@ addBu‰Ú
 	`Œ
 ("&Add"));
 
-43 
+40 
 d–‘eBu‰Ú
  = 
 Ãw
@@ -259,7 +225,7 @@ d–‘eBu‰Ú
 	`Œ
 ("&Delete"));
 
-44 
+41 
 şo£Bu‰Ú
  = 
 Ãw
@@ -269,7 +235,7 @@ d–‘eBu‰Ú
 	`Œ
 ("&Close"));
 
-46 
+43 
 bu‰ÚBox
  = 
 Ãw
@@ -277,7 +243,7 @@ bu‰ÚBox
 QDŸlogBu‰ÚBox
 ;
 
-47 
+44 
 bu‰ÚBox
 ->
 	`addBu‰Ú
@@ -289,7 +255,7 @@ QDŸlogBu‰ÚBox
 AùiÚRŞe
 );
 
-48 
+45 
 bu‰ÚBox
 ->
 	`addBu‰Ú
@@ -301,7 +267,7 @@ QDŸlogBu‰ÚBox
 AùiÚRŞe
 );
 
-49 
+46 
 bu‰ÚBox
 ->
 	`addBu‰Ú
@@ -313,7 +279,7 @@ QDŸlogBu‰ÚBox
 Acû±RŞe
 );
 
-51 
+48 
 bËMod–
  = 
 Ãw
@@ -323,57 +289,69 @@ Acû±RŞe
 this
 );
 
-52 
+49 
 bËMod–
 ->
 	`£tTabË
-("employee");
+("ksmsg");
 
-53 
+50 
 bËMod–
 ->
 	`£tR–©iÚ
 (
-Em¶oy“_D•¬tm’tId
+Msg_Feid
 ,
 
-54 
+51 
 	`QSqlR–©iÚ
-("department", "id", "name"));
+("ksfile", "ksfileid", "wjmc"));
 
-55 
+52 
+bËMod–
+->
+	`£tF‹r
+(
+	`QSŒšg
+("ksmsg.ksfeid = %1").
+	`¬g
+(
+feid
+));
+
+53 
 bËMod–
 ->
 	`£tSÜt
 (
-Em¶oy“_Name
+Msg_D—dtime
 , 
 Qt
 ::
 AsûndšgOrd”
 );
 
-56 
+54 
 bËMod–
 ->
 	`£Ëù
 ();
 
-58 
+56 
 QSqlTabËMod–
  *
 »ÏtiÚMod–
  =
 
-59 
+57 
 bËMod–
 ->
 	`»ÏtiÚMod–
 (
-Em¶oy“_D•¬tm’tId
+Msg_Feid
 );
 
-60 
+58 
 d•¬tm’tComboBox
 ->
 	`£tMod–
@@ -381,19 +359,19 @@ d•¬tm’tComboBox
 »ÏtiÚMod–
 );
 
-61 
+59 
 d•¬tm’tComboBox
 ->
 	`£tMod–CŞumn
 (
 
-62 
+60 
 »ÏtiÚMod–
 ->
 	`f›ldIndex
-("name"));
+("wjmc"));
 
-64 
+62 
 m­³r
  = 
 Ãw
@@ -403,7 +381,7 @@ m­³r
 this
 );
 
-65 
+63 
 m­³r
 ->
 	`£tSubm™PŞicy
@@ -413,7 +391,7 @@ QD©aWidg‘M­³r
 AutoSubm™
 );
 
-66 
+64 
 m­³r
 ->
 	`£tMod–
@@ -421,7 +399,7 @@ m­³r
 bËMod–
 );
 
-67 
+65 
 m­³r
 ->
 	`£tI‹mD–eg©e
@@ -433,14 +411,34 @@ m­³r
 this
 ));
 
-68 
+66 
 m­³r
 ->
 	`addM­pšg
 (
 ÇmeEd™
 , 
-Em¶oy“_Name
+Msg_MsgcÚ‹Á
+);
+
+67 
+m­³r
+->
+	`addM­pšg
+(
+d•¬tm’tComboBox
+, 
+Msg_Feid
+);
+
+68 
+m­³r
+->
+	`addM­pšg
+(
+ex‹nsiÚLšeEd™
+, 
+Msg_msgpubtime
 );
 
 69 
@@ -448,9 +446,9 @@ m­³r
 ->
 	`addM­pšg
 (
-d•¬tm’tComboBox
+emaEd™
 , 
-Em¶oy“_D•¬tm’tId
+Msg_Ksid
 );
 
 70 
@@ -458,36 +456,16 @@ m­³r
 ->
 	`addM­pšg
 (
-ex‹nsiÚLšeEd™
-, 
-Em¶oy“_Ex‹nsiÚ
-);
-
-71 
-m­³r
-->
-	`addM­pšg
-(
-emaEd™
-, 
-Em¶oy“_Ema
-);
-
-72 
-m­³r
-->
-	`addM­pšg
-(
 ¡¬tD©eEd™
 , 
-Em¶oy“_S¹D©e
+Msg_D—dtime
 );
 
-74 ià(
+72 ià(
 id
  != -1) {
 
-75 
+73 
 row
  = 0;„ow < 
 bËMod–
@@ -495,7 +473,7 @@ row
 	`rowCouÁ
 (); ++row) {
 
-76 
+74 
 QSqlRecÜd
  
 »cÜd
@@ -507,19 +485,19 @@ QSqlRecÜd
 row
 );
 
-77 ià(
+75 ià(
 »cÜd
 .
 	`v®ue
 (
-Em¶oy“_Id
+Msg_Id
 ).
 	`toIÁ
 (è=ğ
 id
 ) {
 
-78 
+76 
 m­³r
 ->
 	`£tCu¼’tIndex
@@ -527,79 +505,13 @@ m­³r
 row
 );
 
-83 
+81 
 m­³r
 ->
 	`toFœ¡
 ();
 
-86 
-	`cÚÃù
-(
-fœ¡Bu‰Ú
-, 
-	`SIGNAL
-(
-	`şicked
-()), 
-m­³r
-, 
-	`SLOT
-(
-	`toFœ¡
-()));
-
-87 
-	`cÚÃù
-(
-´eviousBu‰Ú
-, 
-	`SIGNAL
-(
-	`şicked
-()),
-
-88 
-m­³r
-, 
-	`SLOT
-(
-	`toP»vious
-()));
-
 89 
-	`cÚÃù
-(
-ÃxtBu‰Ú
-, 
-	`SIGNAL
-(
-	`şicked
-()), 
-m­³r
-, 
-	`SLOT
-(
-	`toNext
-()));
-
-90 
-	`cÚÃù
-(
-Ï¡Bu‰Ú
-, 
-	`SIGNAL
-(
-	`şicked
-()), 
-m­³r
-, 
-	`SLOT
-(
-	`toLa¡
-()));
-
-91 
 	`cÚÃù
 (
 addBu‰Ú
@@ -615,7 +527,7 @@ this
 	`addEm¶oy“
 ()));
 
-92 
+90 
 	`cÚÃù
 (
 d–‘eBu‰Ú
@@ -625,7 +537,7 @@ d–‘eBu‰Ú
 	`şicked
 ()),
 
-93 
+91 
 this
 , 
 	`SLOT
@@ -633,7 +545,7 @@ this
 	`d–‘eEm¶oy“
 ()));
 
-94 
+92 
 	`cÚÃù
 (
 şo£Bu‰Ú
@@ -649,65 +561,7 @@ this
 	`acû±
 ()));
 
-96 
-QHBoxLayout
- *
-tİBu‰ÚLayout
- = 
-Ãw
- QHBoxLayout;
-
-97 
-tİBu‰ÚLayout
-->
-	`£tCÚ‹ÁsM¬gšs
-(20, 0, 20, 5);
-
-98 
-tİBu‰ÚLayout
-->
-	`addSŒ‘ch
-();
-
-99 
-tİBu‰ÚLayout
-->
-	`addWidg‘
-(
-fœ¡Bu‰Ú
-);
-
-100 
-tİBu‰ÚLayout
-->
-	`addWidg‘
-(
-´eviousBu‰Ú
-);
-
-101 
-tİBu‰ÚLayout
-->
-	`addWidg‘
-(
-ÃxtBu‰Ú
-);
-
-102 
-tİBu‰ÚLayout
-->
-	`addWidg‘
-(
-Ï¡Bu‰Ú
-);
-
 103 
-tİBu‰ÚLayout
-->
-	`addSŒ‘ch
-();
-
-105 
 QGridLayout
  *
 mašLayout
@@ -715,15 +569,7 @@ mašLayout
 Ãw
  QGridLayout;
 
-106 
-mašLayout
-->
-	`addLayout
-(
-tİBu‰ÚLayout
-, 0, 0, 1, 3);
-
-107 
+105 
 mašLayout
 ->
 	`addWidg‘
@@ -731,7 +577,7 @@ mašLayout
 ÇmeLab–
 , 1, 0);
 
-108 
+106 
 mašLayout
 ->
 	`addWidg‘
@@ -739,7 +585,7 @@ mašLayout
 ÇmeEd™
 , 1, 1, 1, 2);
 
-109 
+107 
 mašLayout
 ->
 	`addWidg‘
@@ -747,7 +593,7 @@ mašLayout
 d•¬tm’tLab–
 , 2, 0);
 
-110 
+108 
 mašLayout
 ->
 	`addWidg‘
@@ -755,7 +601,7 @@ mašLayout
 d•¬tm’tComboBox
 , 2, 1, 1, 2);
 
-111 
+109 
 mašLayout
 ->
 	`addWidg‘
@@ -763,7 +609,7 @@ mašLayout
 ex‹nsiÚLab–
 , 3, 0);
 
-112 
+110 
 mašLayout
 ->
 	`addWidg‘
@@ -771,7 +617,7 @@ mašLayout
 ex‹nsiÚLšeEd™
 , 3, 1);
 
-113 
+111 
 mašLayout
 ->
 	`addWidg‘
@@ -779,7 +625,7 @@ mašLayout
 emaLab–
 , 4, 0);
 
-114 
+112 
 mašLayout
 ->
 	`addWidg‘
@@ -787,7 +633,7 @@ mašLayout
 emaEd™
 , 4, 1, 1, 2);
 
-115 
+113 
 mašLayout
 ->
 	`addWidg‘
@@ -795,7 +641,7 @@ mašLayout
 ¡¬tD©eLab–
 , 5, 0);
 
-116 
+114 
 mašLayout
 ->
 	`addWidg‘
@@ -803,7 +649,7 @@ mašLayout
 ¡¬tD©eEd™
 , 5, 1);
 
-117 
+115 
 mašLayout
 ->
 	`addWidg‘
@@ -811,39 +657,29 @@ mašLayout
 bu‰ÚBox
 , 7, 0, 1, 3);
 
-118 
+116 
 mašLayout
 ->
 	`£tRowMšimumHeight
 (6, 10);
 
-119 
+117 
 mašLayout
 ->
 	`£tRowSŒ‘ch
 (6, 1);
 
-120 
+118 
 mašLayout
 ->
 	`£tCŞumnSŒ‘ch
 (2, 1);
 
-121 
+119 
 	`£tLayout
 (
 mašLayout
 );
-
-123 ià(
-id
- == -1) {
-
-124 
-ÃxtBu‰Ú
-->
-	`£tFocus
-();
 
 126 
 ÇmeEd™
@@ -855,7 +691,7 @@ id
 	`£tWšdowT™Ë
 (
 	`Œ
-("Edit Employees"));
+("æ¶ˆæ¯ç®¡ç†"));
 
 130 
 	}
@@ -1070,27 +906,27 @@ EMPLOYEEFORM_H
 ;
 
 16 
-	mEm¶oy“_Id
+	mMsg_Id
  = 0,
 
 17 
-	mEm¶oy“_Name
+	mMsg_MsgcÚ‹Á
  = 1,
 
 18 
-	mEm¶oy“_D•¬tm’tId
+	mMsg_msgpubtime
  = 2,
 
 19 
-	mEm¶oy“_Ex‹nsiÚ
+	mMsg_Feid
  = 3,
 
 20 
-	mEm¶oy“_Ema
+	mMsg_Ksid
  = 4,
 
 21 
-	mEm¶oy“_S¹D©e
+	mMsg_D—dtime
  = 5
 
 24 şas 
@@ -1113,6 +949,8 @@ public
 Em¶oy“FÜm
 (
 id
+,
+feid
 , 
 QWidg‘
  *
@@ -1262,6 +1100,1752 @@ QDŸlogBu‰ÚBox
  *
 	mbu‰ÚBox
 ;
+
+	@fileform.cpp
+
+1 
+	~<QtSql
+>
+
+2 
+	~<QtWidg‘s
+>
+
+3 
+	~"FeFÜm.h
+"
+
+4 
+	~<QMes§geBox
+>
+
+6 
+	gFeFÜm
+::
+	$FeFÜm
+(
+QSŒšg
+ 
+ksid
+,
+QWidg‘
+ *
+·»Á
+)
+
+7 : 
+	$QDŸlog
+(
+·»Á
+)
+
+9 
+ÇmeEd™
+ = 
+Ãw
+ 
+QLšeEd™
+;
+
+10 
+ÇmeLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("æ–‡ä»¶åç§°:"));
+
+11 
+ÇmeLab–
+->
+	`£tBuddy
+(
+ÇmeEd™
+);
+
+14 
+pubTimeEd™
+ = 
+Ãw
+ 
+QLšeEd™
+;
+
+15 
+pubtimeLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("å‘å¸ƒæ—¶é—´"));
+
+16 
+pubtimeLab–
+->
+	`£tBuddy
+(
+pubTimeEd™
+);
+
+18 
+webAddEd™
+ğ
+Ãw
+ 
+QLšeEd™
+;
+
+19 
+webAddLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("æ‰€å±è€ƒè¯•"));
+
+20 
+webAddLab–
+->
+	`£tBuddy
+(
+webAddEd™
+);
+
+22 
+addBu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("æ·»åŠ æ–‡ä»¶"));
+
+23 
+d–‘eBu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("åˆ é™¤æ–‡ä»¶"));
+
+24 
+şo£Bu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("å…³é—­"));
+
+26 
+bu‰ÚBox
+ = 
+Ãw
+ 
+QDŸlogBu‰ÚBox
+;
+
+27 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+addBu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+AùiÚRŞe
+);
+
+28 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+d–‘eBu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+AùiÚRŞe
+);
+
+29 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+şo£Bu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+Acû±RŞe
+);
+
+31 
+bËMod–
+ = 
+Ãw
+ 
+	`QSqlR–©iÚ®TabËMod–
+(
+this
+);
+
+32 
+bËMod–
+->
+	`£tTabË
+("ksfile");
+
+35 
+bËMod–
+->
+	`£tF‹r
+(
+	`QSŒšg
+("ksfe.ksid = \"%1\" ").
+	`¬g
+(
+feid
+));
+
+37 
+bËMod–
+->
+	`£Ëù
+();
+
+39 
+m­³r
+ = 
+Ãw
+ 
+	`QD©aWidg‘M­³r
+(
+this
+);
+
+40 
+m­³r
+->
+	`£tSubm™PŞicy
+(
+QD©aWidg‘M­³r
+::
+AutoSubm™
+);
+
+41 
+m­³r
+->
+	`£tMod–
+(
+bËMod–
+);
+
+42 
+m­³r
+->
+	`£tI‹mD–eg©e
+(
+Ãw
+ 
+	`QSqlR–©iÚ®D–eg©e
+(
+this
+));
+
+43 
+m­³r
+->
+	`addM­pšg
+(
+ÇmeEd™
+, 
+Msg_MsgcÚ‹Á
+);
+
+44 
+m­³r
+->
+	`addM­pšg
+(
+d•¬tm’tComboBox
+, 
+Msg_Feid
+);
+
+45 
+m­³r
+->
+	`addM­pšg
+(
+ÇmeLšeEd™
+, 
+Msg_msgpubtime
+);
+
+46 
+m­³r
+->
+	`addM­pšg
+(
+emaEd™
+, 
+Msg_Ksid
+);
+
+47 
+m­³r
+->
+	`addM­pšg
+(
+¡¬tD©eEd™
+, 
+Msg_D—dtime
+);
+
+49 ià(
+id
+ != -1) {
+
+50 
+row
+ = 0;„ow < 
+bËMod–
+->
+	`rowCouÁ
+(); ++row) {
+
+51 
+QSqlRecÜd
+ 
+»cÜd
+ = 
+bËMod–
+->
+	`»cÜd
+(
+row
+);
+
+52 ià(
+»cÜd
+.
+	`v®ue
+(
+Msg_Id
+).
+	`toIÁ
+(è=ğ
+id
+) {
+
+53 
+m­³r
+->
+	`£tCu¼’tIndex
+(
+row
+);
+
+58 
+m­³r
+->
+	`toFœ¡
+();
+
+61 
+	`cÚÃù
+(
+addBu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()), 
+this
+, 
+	`SLOT
+(
+	`addFe
+()));
+
+62 
+	`cÚÃù
+(
+d–‘eBu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()),
+
+63 
+this
+, 
+	`SLOT
+(
+	`d–‘eFe
+()));
+
+64 
+	`cÚÃù
+(
+şo£Bu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()), 
+this
+, 
+	`SLOT
+(
+	`acû±
+()));
+
+67 
+QGridLayout
+ *
+mašLayout
+ = 
+Ãw
+ QGridLayout;
+
+69 
+mašLayout
+->
+	`addWidg‘
+(
+ÇmeLab–
+, 1, 0);
+
+70 
+mašLayout
+->
+	`addWidg‘
+(
+ÇmeEd™
+, 1, 1, 1, 2);
+
+71 
+mašLayout
+->
+	`addWidg‘
+(
+pubtimeLab–
+, 2, 0);
+
+72 
+mašLayout
+->
+	`addWidg‘
+(
+d•¬tm’tComboBox
+, 2, 1, 1, 2);
+
+73 
+mašLayout
+->
+	`addWidg‘
+(
+ex‹nsiÚLab–
+, 3, 0);
+
+74 
+mašLayout
+->
+	`addWidg‘
+(
+ÇmeLšeEd™
+, 3, 1);
+
+75 
+mašLayout
+->
+	`addWidg‘
+(
+emaLab–
+, 4, 0);
+
+76 
+mašLayout
+->
+	`addWidg‘
+(
+emaEd™
+, 4, 1, 1, 2);
+
+77 
+mašLayout
+->
+	`addWidg‘
+(
+¡¬tD©eLab–
+, 5, 0);
+
+78 
+mašLayout
+->
+	`addWidg‘
+(
+¡¬tD©eEd™
+, 5, 1);
+
+79 
+mašLayout
+->
+	`addWidg‘
+(
+bu‰ÚBox
+, 7, 0, 1, 3);
+
+80 
+mašLayout
+->
+	`£tRowMšimumHeight
+(6, 10);
+
+81 
+mašLayout
+->
+	`£tRowSŒ‘ch
+(6, 1);
+
+82 
+mašLayout
+->
+	`£tCŞumnSŒ‘ch
+(2, 1);
+
+83 
+	`£tLayout
+(
+mašLayout
+);
+
+85 
+ÇmeEd™
+->
+	`£tFocus
+();
+
+86 
+	`£tWšdowT™Ë
+(
+	`Œ
+("æ–‡ä»¶ç®¡ç†"));
+
+87 
+	}
+}
+
+89 
+	gFeFÜm
+::
+	$dÚe
+(
+»suÉ
+)
+
+91 
+m­³r
+->
+	`subm™
+();
+
+92 
+QDŸlog
+::
+	`dÚe
+(
+»suÉ
+);
+
+93 
+	}
+}
+
+95 
+	gFeFÜm
+::
+	$addFe
+()
+
+97 
+row
+ = 
+m­³r
+->
+	`cu¼’tIndex
+();
+
+98 
+m­³r
+->
+	`subm™
+();
+
+99 
+bËMod–
+->
+	`š£¹Row
+(
+row
+);
+
+100 
+m­³r
+->
+	`£tCu¼’tIndex
+(
+row
+);
+
+102 
+ÇmeEd™
+->
+	`ş—r
+();
+
+103 
+ÇmeLšeEd™
+->
+	`ş—r
+();
+
+104 
+¡¬tD©eEd™
+->
+	`£tD©e
+(
+QD©e
+::
+	`cu¼’tD©e
+());
+
+105 
+ÇmeEd™
+->
+	`£tFocus
+();
+
+106 
+	}
+}
+
+108 
+	gFeFÜm
+::
+	$d–‘eFe
+()
+
+110 
+row
+ = 
+m­³r
+->
+	`cu¼’tIndex
+();
+
+111 
+bËMod–
+->
+	`»moveRow
+(
+row
+);
+
+112 
+m­³r
+->
+	`subm™
+();
+
+113 
+m­³r
+->
+	`£tCu¼’tIndex
+(
+	`qMš
+(
+row
+, 
+bËMod–
+->
+	`rowCouÁ
+() - 1));
+
+114 
+	}
+}
+
+	@fileform.h
+
+1 #iâdeà
+EMPLOYEEFORM_H
+
+
+2 
+	#EMPLOYEEFORM_H
+
+
+	)
+
+3 
+	~<QtWidg‘s
+>
+
+4 
+	~<QDŸlog
+>
+
+6 
+şass
+ 
+	gQComboBox
+;
+
+7 
+şass
+ 
+	gQD©aWidg‘M­³r
+;
+
+8 
+şass
+ 
+	gQD©eEd™
+;
+
+9 
+şass
+ 
+	gQDŸlogBu‰ÚBox
+;
+
+10 
+şass
+ 
+	gQLab–
+;
+
+11 
+şass
+ 
+	gQLšeEd™
+;
+
+12 
+şass
+ 
+	gQPushBu‰Ú
+;
+
+13 
+şass
+ 
+	gQSqlR–©iÚ®TabËMod–
+;
+
+16 
+	mKsfe_Ksfeid
+ = 0,
+
+17 
+	mKsfe_Ksid
+ = 1,
+
+18 
+	mKsfe_Wjmc
+ = 2,
+
+19 
+	mKsfe_F•utime
+ = 3,
+
+20 
+	mKsfe_Webadd»ss
+ = 4,
+
+23 şas 
+	cFeFÜm
+ : 
+public
+ 
+QDŸlog
+
+
+25 
+Q_OBJECT
+
+
+27 
+public
+:
+
+28 
+FeFÜm
+(
+id
+,
+feid
+, 
+QWidg‘
+ *
+·»Á
+ = 0);
+
+30 
+dÚe
+(
+»suÉ
+);
+
+32 
+´iv©e
+ 
+	m¦Ùs
+:
+
+33 
+addFe
+();
+
+34 
+d–‘eFe
+();
+
+36 
+	m´iv©e
+:
+
+37 
+QSqlR–©iÚ®TabËMod–
+ *
+bËMod–
+;
+
+38 
+QD©aWidg‘M­³r
+ *
+	mm­³r
+;
+
+39 
+QLab–
+ *
+	mÇmeLab–
+;
+
+40 
+QLab–
+ *
+	mpubtimeLab–
+;
+
+41 
+QLab–
+ *
+	mwebAddLab–
+;
+
+43 
+QLšeEd™
+ *
+	mÇmeEd™
+;
+
+45 
+QLšeEd™
+ *
+	mÇmeEd™
+;
+
+46 
+QLšeEd™
+ *
+	mpubTimeEd™
+;
+
+47 
+QD©eEd™
+ *
+	mwebAddEd™
+;
+
+49 
+QPushBu‰Ú
+ *
+	maddBu‰Ú
+;
+
+50 
+QPushBu‰Ú
+ *
+	md–‘eBu‰Ú
+;
+
+51 
+QPushBu‰Ú
+ *
+	mşo£Bu‰Ú
+;
+
+52 
+QDŸlogBu‰ÚBox
+ *
+	mbu‰ÚBox
+;
+
+	@fileform_copy.cpp
+
+1 
+	~<QtSql
+>
+
+2 
+	~<QtWidg‘s
+>
+
+3 
+	~"FeFÜm.h
+"
+
+4 
+	~<QMes§geBox
+>
+
+6 
+	gFeFÜm
+::
+	$FeFÜm
+(
+id
+,
+feid
+,
+QWidg‘
+ *
+·»Á
+)
+
+7 : 
+	$QDŸlog
+(
+·»Á
+)
+
+9 
+ÇmeEd™
+ = 
+Ãw
+ 
+QLšeEd™
+;
+
+10 
+ÇmeLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("æ¶ˆæ¯å†…å®¹:"));
+
+11 
+ÇmeLab–
+->
+	`£tBuddy
+(
+ÇmeEd™
+);
+
+13 
+d•¬tm’tComboBox
+ = 
+Ãw
+ 
+QComboBox
+;
+
+14 
+pubtimeLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("æ‰€å±æ–‡ä»¶"));
+
+15 
+pubtimeLab–
+->
+	`£tBuddy
+(
+d•¬tm’tComboBox
+);
+
+17 
+ÇmeLšeEd™
+ = 
+Ãw
+ 
+QLšeEd™
+;
+
+18 
+ÇmeLšeEd™
+->
+	`£tV®id©Ü
+(
+Ãw
+ 
+	`QIÁV®id©Ü
+(0, 99999, 
+this
+));
+
+20 
+ex‹nsiÚLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("å‘å¸ƒæ—¶é—´"));
+
+21 
+ex‹nsiÚLab–
+->
+	`£tBuddy
+(
+ÇmeLšeEd™
+);
+
+23 
+emaEd™
+ = 
+Ãw
+ 
+QLšeEd™
+;
+
+24 
+emaLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("æ‰€å±è€ƒè¯•"));
+
+25 
+emaLab–
+->
+	`£tBuddy
+(
+emaEd™
+);
+
+27 
+¡¬tD©eEd™
+ = 
+Ãw
+ 
+QD©eEd™
+;
+
+28 
+¡¬tD©eEd™
+->
+	`£tC®’d¬Pİup
+(
+Œue
+);
+
+29 
+QD©e
+ 
+today
+ = QD©e::
+	`cu¼’tD©e
+();
+
+30 
+¡¬tD©eEd™
+->
+	`£tD©eRªge
+(
+today
+.
+	`addDays
+(-90),oday.addDays(90));
+
+31 
+¡¬tD©eLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("&å¤±æ•ˆæ—¶é—´:"));
+
+32 
+¡¬tD©eLab–
+->
+	`£tBuddy
+(
+¡¬tD©eEd™
+);
+
+39 
+addBu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("&Add"));
+
+40 
+d–‘eBu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("&Delete"));
+
+41 
+şo£Bu‰Ú
+ = 
+Ãw
+ 
+	`QPushBu‰Ú
+(
+	`Œ
+("&Close"));
+
+43 
+bu‰ÚBox
+ = 
+Ãw
+ 
+QDŸlogBu‰ÚBox
+;
+
+44 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+addBu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+AùiÚRŞe
+);
+
+45 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+d–‘eBu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+AùiÚRŞe
+);
+
+46 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
+şo£Bu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+Acû±RŞe
+);
+
+48 
+bËMod–
+ = 
+Ãw
+ 
+	`QSqlR–©iÚ®TabËMod–
+(
+this
+);
+
+49 
+bËMod–
+->
+	`£tTabË
+("ksmsg");
+
+50 
+bËMod–
+->
+	`£tR–©iÚ
+(
+Msg_Feid
+,
+
+51 
+	`QSqlR–©iÚ
+("ksfile", "ksfileid", "wjmc"));
+
+52 
+bËMod–
+->
+	`£tF‹r
+(
+	`QSŒšg
+("ksmsg.ksfeid = %1").
+	`¬g
+(
+feid
+));
+
+53 
+bËMod–
+->
+	`£tSÜt
+(
+Msg_D—dtime
+, 
+Qt
+::
+AsûndšgOrd”
+);
+
+54 
+bËMod–
+->
+	`£Ëù
+();
+
+56 
+QSqlTabËMod–
+ *
+»ÏtiÚMod–
+ =
+
+57 
+bËMod–
+->
+	`»ÏtiÚMod–
+(
+Msg_Feid
+);
+
+58 
+d•¬tm’tComboBox
+->
+	`£tMod–
+(
+»ÏtiÚMod–
+);
+
+59 
+d•¬tm’tComboBox
+->
+	`£tMod–CŞumn
+(
+
+60 
+»ÏtiÚMod–
+->
+	`f›ldIndex
+("wjmc"));
+
+62 
+m­³r
+ = 
+Ãw
+ 
+	`QD©aWidg‘M­³r
+(
+this
+);
+
+63 
+m­³r
+->
+	`£tSubm™PŞicy
+(
+QD©aWidg‘M­³r
+::
+AutoSubm™
+);
+
+64 
+m­³r
+->
+	`£tMod–
+(
+bËMod–
+);
+
+65 
+m­³r
+->
+	`£tI‹mD–eg©e
+(
+Ãw
+ 
+	`QSqlR–©iÚ®D–eg©e
+(
+this
+));
+
+66 
+m­³r
+->
+	`addM­pšg
+(
+ÇmeEd™
+, 
+Msg_MsgcÚ‹Á
+);
+
+67 
+m­³r
+->
+	`addM­pšg
+(
+d•¬tm’tComboBox
+, 
+Msg_Feid
+);
+
+68 
+m­³r
+->
+	`addM­pšg
+(
+ÇmeLšeEd™
+, 
+Msg_msgpubtime
+);
+
+69 
+m­³r
+->
+	`addM­pšg
+(
+emaEd™
+, 
+Msg_Ksid
+);
+
+70 
+m­³r
+->
+	`addM­pšg
+(
+¡¬tD©eEd™
+, 
+Msg_D—dtime
+);
+
+72 ià(
+id
+ != -1) {
+
+73 
+row
+ = 0;„ow < 
+bËMod–
+->
+	`rowCouÁ
+(); ++row) {
+
+74 
+QSqlRecÜd
+ 
+»cÜd
+ = 
+bËMod–
+->
+	`»cÜd
+(
+row
+);
+
+75 ià(
+»cÜd
+.
+	`v®ue
+(
+Msg_Id
+).
+	`toIÁ
+(è=ğ
+id
+) {
+
+76 
+m­³r
+->
+	`£tCu¼’tIndex
+(
+row
+);
+
+81 
+m­³r
+->
+	`toFœ¡
+();
+
+89 
+	`cÚÃù
+(
+addBu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()), 
+this
+, 
+	`SLOT
+(
+	`addFe
+()));
+
+90 
+	`cÚÃù
+(
+d–‘eBu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()),
+
+91 
+this
+, 
+	`SLOT
+(
+	`d–‘eFe
+()));
+
+92 
+	`cÚÃù
+(
+şo£Bu‰Ú
+, 
+	`SIGNAL
+(
+	`şicked
+()), 
+this
+, 
+	`SLOT
+(
+	`acû±
+()));
+
+103 
+QGridLayout
+ *
+mašLayout
+ = 
+Ãw
+ QGridLayout;
+
+105 
+mašLayout
+->
+	`addWidg‘
+(
+ÇmeLab–
+, 1, 0);
+
+106 
+mašLayout
+->
+	`addWidg‘
+(
+ÇmeEd™
+, 1, 1, 1, 2);
+
+107 
+mašLayout
+->
+	`addWidg‘
+(
+pubtimeLab–
+, 2, 0);
+
+108 
+mašLayout
+->
+	`addWidg‘
+(
+d•¬tm’tComboBox
+, 2, 1, 1, 2);
+
+109 
+mašLayout
+->
+	`addWidg‘
+(
+ex‹nsiÚLab–
+, 3, 0);
+
+110 
+mašLayout
+->
+	`addWidg‘
+(
+ÇmeLšeEd™
+, 3, 1);
+
+111 
+mašLayout
+->
+	`addWidg‘
+(
+emaLab–
+, 4, 0);
+
+112 
+mašLayout
+->
+	`addWidg‘
+(
+emaEd™
+, 4, 1, 1, 2);
+
+113 
+mašLayout
+->
+	`addWidg‘
+(
+¡¬tD©eLab–
+, 5, 0);
+
+114 
+mašLayout
+->
+	`addWidg‘
+(
+¡¬tD©eEd™
+, 5, 1);
+
+115 
+mašLayout
+->
+	`addWidg‘
+(
+bu‰ÚBox
+, 7, 0, 1, 3);
+
+116 
+mašLayout
+->
+	`£tRowMšimumHeight
+(6, 10);
+
+117 
+mašLayout
+->
+	`£tRowSŒ‘ch
+(6, 1);
+
+118 
+mašLayout
+->
+	`£tCŞumnSŒ‘ch
+(2, 1);
+
+119 
+	`£tLayout
+(
+mašLayout
+);
+
+126 
+ÇmeEd™
+->
+	`£tFocus
+();
+
+129 
+	`£tWšdowT™Ë
+(
+	`Œ
+("æ¶ˆæ¯ç®¡ç†"));
+
+130 
+	}
+}
+
+132 
+	gFeFÜm
+::
+	$dÚe
+(
+»suÉ
+)
+
+134 
+m­³r
+->
+	`subm™
+();
+
+135 
+QDŸlog
+::
+	`dÚe
+(
+»suÉ
+);
+
+136 
+	}
+}
+
+138 
+	gFeFÜm
+::
+	$addFe
+()
+
+140 
+row
+ = 
+m­³r
+->
+	`cu¼’tIndex
+();
+
+141 
+m­³r
+->
+	`subm™
+();
+
+142 
+bËMod–
+->
+	`š£¹Row
+(
+row
+);
+
+143 
+m­³r
+->
+	`£tCu¼’tIndex
+(
+row
+);
+
+145 
+ÇmeEd™
+->
+	`ş—r
+();
+
+146 
+ÇmeLšeEd™
+->
+	`ş—r
+();
+
+147 
+¡¬tD©eEd™
+->
+	`£tD©e
+(
+QD©e
+::
+	`cu¼’tD©e
+());
+
+148 
+ÇmeEd™
+->
+	`£tFocus
+();
+
+149 
+	}
+}
+
+151 
+	gFeFÜm
+::
+	$d–‘eFe
+()
+
+153 
+row
+ = 
+m­³r
+->
+	`cu¼’tIndex
+();
+
+154 
+bËMod–
+->
+	`»moveRow
+(
+row
+);
+
+155 
+m­³r
+->
+	`subm™
+();
+
+156 
+m­³r
+->
+	`£tCu¼’tIndex
+(
+	`qMš
+(
+row
+, 
+bËMod–
+->
+	`rowCouÁ
+() - 1));
+
+157 
+	}
+}
 
 	@main.cpp
 
@@ -1428,28 +3012,32 @@ fÜm
 "
 
 5 
+	~"fefÜm.h
+"
+
+6 
 	~"mašfÜm.h
 "
 
-7 
+8 
 	gMašFÜm
 ::
 	$MašFÜm
 ()
 
-9 
-	`ü—‹D•¬tm’tPª–
-();
-
 10 
-	`ü—‹Em¶oy“Pª–
+	`ü—‹FePª–
 ();
 
 11 
+	`ü—‹MsgPª–
+();
+
+12 
 	`ü—‹KaoshiPª–
 ();
 
-13 
+14 
 ¥l™‹r
  = 
 Ãw
@@ -1461,7 +3049,7 @@ Qt
 V”tiÿl
 );
 
-14 
+15 
 ¥l™‹r
 ->
 	`£tF¿meStyË
@@ -1471,23 +3059,23 @@ QF¿me
 StyËdPª–
 );
 
-15 
-¥l™‹r
-->
-	`addWidg‘
-(
-d•¬tm’tPª–
-);
-
 16 
 ¥l™‹r
 ->
 	`addWidg‘
 (
-em¶oy“Pª–
+fePª–
 );
 
-21 
+17 
+¥l™‹r
+->
+	`addWidg‘
+(
+msgPª–
+);
+
+22 
 addBu‰Ú
  = 
 Ãw
@@ -1495,9 +3083,9 @@ addBu‰Ú
 	`QPushBu‰Ú
 (
 	`Œ
-("&Add Dept."));
+("&æ·»åŠ æ–‡ä»¶."));
 
-22 
+23 
 d–‘eBu‰Ú
  = 
 Ãw
@@ -1505,9 +3093,9 @@ d–‘eBu‰Ú
 	`QPushBu‰Ú
 (
 	`Œ
-("&Delete Dept."));
+("&åˆ é™¤æ–‡ä»¶."));
 
-23 
+24 
 ed™Bu‰Ú
  = 
 Ãw
@@ -1515,9 +3103,9 @@ ed™Bu‰Ú
 	`QPushBu‰Ú
 (
 	`Œ
-("&Edit Employees..."));
+("ç¼–è¾‘æ¶ˆæ¯"));
 
-24 
+25 
 qu™Bu‰Ú
  = 
 Ãw
@@ -1527,7 +3115,7 @@ qu™Bu‰Ú
 	`Œ
 ("&Quit"));
 
-26 
+27 
 bu‰ÚBox
  = 
 Ãw
@@ -1535,24 +3123,12 @@ bu‰ÚBox
 QDŸlogBu‰ÚBox
 ;
 
-27 
-bu‰ÚBox
-->
-	`addBu‰Ú
-(
-addBu‰Ú
-, 
-QDŸlogBu‰ÚBox
-::
-AùiÚRŞe
-);
-
 28 
 bu‰ÚBox
 ->
 	`addBu‰Ú
 (
-d–‘eBu‰Ú
+addBu‰Ú
 , 
 QDŸlogBu‰ÚBox
 ::
@@ -1564,7 +3140,7 @@ bu‰ÚBox
 ->
 	`addBu‰Ú
 (
-ed™Bu‰Ú
+d–‘eBu‰Ú
 , 
 QDŸlogBu‰ÚBox
 ::
@@ -1576,6 +3152,18 @@ bu‰ÚBox
 ->
 	`addBu‰Ú
 (
+ed™Bu‰Ú
+, 
+QDŸlogBu‰ÚBox
+::
+AùiÚRŞe
+);
+
+31 
+bu‰ÚBox
+->
+	`addBu‰Ú
+(
 qu™Bu‰Ú
 , 
 QDŸlogBu‰ÚBox
@@ -1583,7 +3171,7 @@ QDŸlogBu‰ÚBox
 Acû±RŞe
 );
 
-32 
+33 
 	`cÚÃù
 (
 addBu‰Ú
@@ -1596,10 +3184,10 @@ this
 , 
 	`SLOT
 (
-	`addD•¬tm’t
+	`addfe
 ()));
 
-33 
+34 
 	`cÚÃù
 (
 d–‘eBu‰Ú
@@ -1612,10 +3200,10 @@ this
 , 
 	`SLOT
 (
-	`d–‘eD•¬tm’t
+	`d–‘efe
 ()));
 
-34 
+35 
 	`cÚÃù
 (
 ed™Bu‰Ú
@@ -1628,10 +3216,10 @@ this
 , 
 	`SLOT
 (
-	`ed™Em¶oy“s
+	`ed™msgs
 ()));
 
-35 
+36 
 	`cÚÃù
 (
 qu™Bu‰Ú
@@ -1647,7 +3235,7 @@ this
 	`şo£
 ()));
 
-37 
+38 
 QVBoxLayout
  *
 mašLayout
@@ -1655,7 +3243,7 @@ mašLayout
 Ãw
  QVBoxLayout;
 
-38 
+39 
 mašLayout
 ->
 	`addWidg‘
@@ -1663,7 +3251,7 @@ mašLayout
 kaoshiPª–
 );
 
-39 
+40 
 mašLayout
 ->
 	`addWidg‘
@@ -1671,7 +3259,7 @@ mašLayout
 ¥l™‹r
 );
 
-40 
+41 
 mašLayout
 ->
 	`addWidg‘
@@ -1679,60 +3267,60 @@ mašLayout
 bu‰ÚBox
 );
 
-42 
+43 
 	`£tLayout
 (
 mašLayout
 );
 
-44 
+45 
 	`£tWšdowT™Ë
 (
 	`Œ
 ("Staff Manager"));
 
-46 
-d•¬tm’tV›w
+47 
+feV›w
 ->
 	`£tCu¼’tIndex
 (
-d•¬tm’tMod–
+feMod–
 ->
 	`šdex
 (0, 0));
 
-47 
+48 
 	}
 }
 
-49 
+50 
 	gMašFÜm
 ::
 	$upd©eMsgV›w
 ()
 
-51 
+52 
 QMod–Index
  
 šdex
  = 
-d•¬tm’tV›w
+feV›w
 ->
 	`cu¼’tIndex
 ();
 
-52 ià(
+53 ià(
 šdex
 .
 	`isV®id
 ()) {
 
-53 
+54 
 QSqlRecÜd
  
 »cÜd
  = 
-d•¬tm’tMod–
+feMod–
 ->
 	`»cÜd
 (
@@ -1741,7 +3329,7 @@ d•¬tm’tMod–
 	`row
 ());
 
-54 
+55 
 id
  = 
 »cÜd
@@ -1751,8 +3339,8 @@ id
 	`toIÁ
 ();
 
-55 
-em¶oy“Mod–
+56 
+msgMod–
 ->
 	`£tF‹r
 (
@@ -1763,15 +3351,15 @@ em¶oy“Mod–
 id
 ));
 
-56 
-em¶oy“Lab–
+57 
+msgLab–
 ->
 	`£tText
 (
 	`Œ
 ("é…ç½® %1 è€ƒè¯•çš„æ¶ˆæ¯msg")
 
-57 .
+58 .
 	`¬g
 (
 »cÜd
@@ -1781,123 +3369,123 @@ em¶oy“Lab–
 	`toSŒšg
 ()));
 
-60 
-em¶oy“Mod–
+61 
+msgMod–
 ->
 	`£tF‹r
 ("ksfileid = -1");
 
-61 
-em¶oy“Lab–
+62 
+msgLab–
 ->
 	`£tText
 (
 	`Œ
 ("E&mployees"));
 
-63 
-em¶oy“Mod–
+64 
+msgMod–
 ->
 	`£Ëù
 ();
 
-64 
-em¶oy“V›w
+65 
+msgV›w
 ->
 	`hÜizÚlH—d”
 ()->
 	`£tVisibË
 (
 
-65 
-em¶oy“Mod–
+66 
+msgMod–
 ->
 	`rowCouÁ
 () > 0);
 
-68 
+69 
 	}
 }
 
-70 
+71 
 	gMašFÜm
 ::
-	$addD•¬tm’t
+	$addfe
 ()
 
-72 
+73 
 row
  = 
-d•¬tm’tMod–
+feMod–
 ->
 	`rowCouÁ
 ();
 
-73 
-d•¬tm’tMod–
+74 
+feMod–
 ->
 	`š£¹Row
 (
 row
 );
 
-74 
+75 
 QMod–Index
  
 šdex
  = 
-d•¬tm’tMod–
+feMod–
 ->
 	`šdex
 (
 row
 , 
-D•¬tm’t_Name
+Ksfe_ksid
 );
 
-75 
-d•¬tm’tV›w
+76 
+feV›w
 ->
 	`£tCu¼’tIndex
 (
 šdex
 );
 
-76 
-d•¬tm’tV›w
+77 
+feV›w
 ->
 	`ed™
 (
 šdex
 );
 
-77 
+78 
 	}
 }
 
-79 
+80 
 	gMašFÜm
 ::
-	$d–‘eD•¬tm’t
+	$d–‘efe
 ()
 
-81 
+82 
 QMod–Index
  
 šdex
  = 
-d•¬tm’tV›w
+feV›w
 ->
 	`cu¼’tIndex
 ();
 
-82 ià(!
+83 ià(!
 šdex
 .
 	`isV®id
 ())
 
-85 
+86 
 QSqlD©aba£
 ::
 	`d©aba£
@@ -1905,12 +3493,12 @@ QSqlD©aba£
 	`Œª§ùiÚ
 ();
 
-86 
+87 
 QSqlRecÜd
  
 »cÜd
  = 
-d•¬tm’tMod–
+feMod–
 ->
 	`»cÜd
 (
@@ -1919,44 +3507,44 @@ d•¬tm’tMod–
 	`row
 ());
 
-87 
+88 
 id
  = 
 »cÜd
 .
 	`v®ue
 (
-D•¬tm’t_Id
+Ksfe_ksfeid
 ).
 	`toIÁ
 ();
 
-88 
-numEm¶oy“s
+89 
+nummsgs
  = 0;
 
-90 
+91 
 QSqlQu”y
  
 	`qu”y
 (
 	`QSŒšg
-("SELECT COUNT(*) FROMƒmployee "
+("SELECT COUNT(*) FROM msg "
 
-91 "WHERE d•¬tm’tid = %1").
+92 "WHERE feid = %1").
 	`¬g
 (
 id
 ));
 
-92 ià(
+93 ià(
 qu”y
 .
 	`Ãxt
 ())
 
-93 
-numEm¶oy“s
+94 
+nummsgs
  = 
 qu”y
 .
@@ -1965,11 +3553,11 @@ qu”y
 	`toIÁ
 ();
 
-94 ià(
-numEm¶oy“s
+95 ià(
+nummsgs
  > 0) {
 
-95 
+96 
 r
  = 
 QMes§geBox
@@ -1979,25 +3567,25 @@ QMes§geBox
 this
 , 
 	`Œ
-("Delete Department"),
+("Delete file"),
 
-96 
+97 
 	`Œ
-("Delete %1‡nd‡ll itsƒmployees?")
+("Delete %1‡nd‡ll its msgs?")
 
-97 .
+98 .
 	`¬g
 (
 »cÜd
 .
 	`v®ue
 (
-D•¬tm’t_Name
+Ksfe_ksid
 ).
 	`toSŒšg
 ()),
 
-98 
+99 
 QMes§geBox
 ::
 Yes
@@ -2005,7 +3593,7 @@ Yes
 No
 );
 
-99 ià(
+100 ià(
 r
  =ğ
 QMes§geBox
@@ -2013,7 +3601,7 @@ QMes§geBox
 No
 ) {
 
-100 
+101 
 QSqlD©aba£
 ::
 	`d©aba£
@@ -2021,22 +3609,22 @@ QSqlD©aba£
 	`rŞlback
 ();
 
-104 
+105 
 qu”y
 .
 	`exec
 (
 	`QSŒšg
-("DELETE FROMƒmployee "
+("DELETE FROM msg "
 
-105 "WHERE d•¬tm’tid = %1").
+106 "WHERE feid = %1").
 	`¬g
 (
 id
 ));
 
-108 
-d•¬tm’tMod–
+109 
+feMod–
 ->
 	`»moveRow
 (
@@ -2045,13 +3633,13 @@ d•¬tm’tMod–
 	`row
 ());
 
-109 
-d•¬tm’tMod–
+110 
+feMod–
 ->
 	`subm™AÎ
 ();
 
-110 
+111 
 QSqlD©aba£
 ::
 	`d©aba£
@@ -2059,52 +3647,56 @@ QSqlD©aba£
 	`comm™
 ();
 
-112 
+113 
 	`upd©eMsgV›w
 ();
 
-113 
-d•¬tm’tV›w
+114 
+feV›w
 ->
 	`£tFocus
 ();
 
-114 
+115 
 	}
 }
 
-116 
+117 
 	gMašFÜm
 ::
-	$ed™Em¶oy“s
+	$ed™msgs
 ()
 
-118 
-em¶oy“Id
+119 
+msgId
  = -1;
 
-119 
+120 
+ksfeid
+ = -1;
+
+121 
 QMod–Index
  
 šdex
  = 
-em¶oy“V›w
+msgV›w
 ->
 	`cu¼’tIndex
 ();
 
-120 ià(
+122 ià(
 šdex
 .
 	`isV®id
 ()) {
 
-121 
+123 
 QSqlRecÜd
  
 »cÜd
  = 
-em¶oy“Mod–
+msgMod–
 ->
 	`»cÜd
 (
@@ -2113,58 +3705,72 @@ em¶oy“Mod–
 	`row
 ());
 
-122 
-em¶oy“Id
+124 
+msgId
  = 
 »cÜd
 .
 	`v®ue
 (
-Em¶oy“_Id
+Msg_Id
 ).
 	`toIÁ
 ();
 
 125 
+ksfeid
+ = 
+»cÜd
+.
+	`v®ue
+(
+Msg_Feid
+).
+	`toIÁ
+();
+
+128 
 Em¶oy“FÜm
  
 	`fÜm
 (
-em¶oy“Id
-, 
+msgId
+,
+ksfeid
+,
 this
 );
 
-126 
+129 
 fÜm
 .
 	`exec
 ();
 
-127 
+130 
 	`upd©eMsgV›w
 ();
 
-128 
+131 
 	}
 }
 
-130 
+133 
 	gMašFÜm
 ::
-	$ü—‹D•¬tm’tPª–
+	$ü—‹FePª–
 ()
 
-132 
-d•¬tm’tPª–
+135 
+fePª–
  = 
 Ãw
  
 QWidg‘
 ;
 
-134 
-d•¬tm’tMod–
+136 
+feMod–
  = 
 Ãw
  
@@ -2173,18 +3779,18 @@ d•¬tm’tMod–
 this
 );
 
-135 
-d•¬tm’tMod–
+137 
+feMod–
 ->
 	`£tTabË
 ("ksfile");
 
 138 
-d•¬tm’tMod–
+feMod–
 ->
 	`£tSÜt
 (
-D•¬tm’t_Name
+Ksfe_ksid
 , 
 Qt
 ::
@@ -2192,13 +3798,13 @@ AsûndšgOrd”
 );
 
 143 
-d•¬tm’tMod–
+feMod–
 ->
 	`£Ëù
 ();
 
 145 
-d•¬tm’tV›w
+feV›w
  = 
 Ãw
  
@@ -2206,15 +3812,15 @@ QTabËV›w
 ;
 
 146 
-d•¬tm’tV›w
+feV›w
 ->
 	`£tMod–
 (
-d•¬tm’tMod–
+feMod–
 );
 
 147 
-d•¬tm’tV›w
+feV›w
 ->
 	`£tI‹mD–eg©e
 (
@@ -2226,7 +3832,7 @@ this
 ));
 
 148 
-d•¬tm’tV›w
+feV›w
 ->
 	`£tS–eùiÚMode
 (
@@ -2238,7 +3844,7 @@ SšgËS–eùiÚ
 );
 
 150 
-d•¬tm’tV›w
+feV›w
 ->
 	`£tS–eùiÚBehaviÜ
 (
@@ -2248,13 +3854,13 @@ S–eùRows
 );
 
 152 
-d•¬tm’tV›w
+feV›w
 ->
 	`»sizeCŞumnsToCÚ‹Ás
 ();
 
 153 
-d•¬tm’tV›w
+feV›w
 ->
 	`£tEd™Trigg”s
 (
@@ -2264,7 +3870,7 @@ NoEd™Trigg”s
 );
 
 154 
-d•¬tm’tV›w
+feV›w
 ->
 	`hÜizÚlH—d”
 ()->
@@ -2273,8 +3879,24 @@ d•¬tm’tV›w
 Œue
 );
 
+155 
+feV›w
+->
+	`£tCŞumnHidd’
+(0, 
+Œue
+);
+
 156 
-d•¬tm’tLab–
+feV›w
+->
+	`£tCŞumnHidd’
+(1, 
+Œue
+);
+
+158 
+feLab–
  = 
 Ãw
  
@@ -2283,23 +3905,23 @@ d•¬tm’tLab–
 	`Œ
 ("Depar&tments"));
 
-157 
-d•¬tm’tLab–
+159 
+feLab–
 ->
 	`£tBuddy
 (
-d•¬tm’tV›w
+feV›w
 );
 
-159 
+161 
 	`cÚÃù
 (
-d•¬tm’tV›w
+feV›w
 ->
 	`£ËùiÚMod–
 (),
 
-160 
+162 
 	`SIGNAL
 (
 	`cu¼’tRowChªged
@@ -2307,11 +3929,11 @@ d•¬tm’tV›w
 QMod–Index
  &,
 
-161 cÚ¡ 
+163 cÚ¡ 
 QMod–Index
  &)),
 
-162 
+164 
 this
 , 
 	`SLOT
@@ -2319,7 +3941,7 @@ this
 	`upd©eMsgV›w
 ()));
 
-164 
+166 
 QVBoxLayout
  *
 Ïyout
@@ -2327,50 +3949,50 @@ QVBoxLayout
 Ãw
  QVBoxLayout;
 
-165 
-Ïyout
-->
-	`addWidg‘
-(
-d•¬tm’tLab–
-);
-
-166 
-Ïyout
-->
-	`addWidg‘
-(
-d•¬tm’tV›w
-);
-
 167 
-d•¬tm’tPª–
+Ïyout
+->
+	`addWidg‘
+(
+feLab–
+);
+
+168 
+Ïyout
+->
+	`addWidg‘
+(
+feV›w
+);
+
+169 
+fePª–
 ->
 	`£tLayout
 (
 Ïyout
 );
 
-168 
+170 
 	}
 }
 
-170 
+172 
 	gMašFÜm
 ::
-	$ü—‹Em¶oy“Pª–
+	$ü—‹MsgPª–
 ()
 
-172 
-em¶oy“Pª–
+174 
+msgPª–
  = 
 Ãw
  
 QWidg‘
 ;
 
-173 
-em¶oy“Mod–
+175 
+msgMod–
  = 
 Ãw
  
@@ -2379,40 +4001,94 @@ em¶oy“Mod–
 this
 );
 
-174 
-em¶oy“Mod–
+176 
+msgMod–
 ->
 	`£tTabË
 ("ksmsg");
 
-175 
-em¶oy“Mod–
+177 
+msgMod–
 ->
 	`£tR–©iÚ
 (3,
 
-176 
+178 
 	`QSqlR–©iÚ
-("ksfile","ksfileid","ksid"));
+("ksfile","ksfileid","ksfileid"));
+
+179 
+msgMod–
+->
+	`£tSÜt
+(
+Msg_Id
+, 
+Qt
+::
+AsûndšgOrd”
+);
+
+180 
+msgMod–
+->
+	`£tH—d”D©a
+(1, 
+Qt
+::
+HÜizÚl
+,
+
+181 
+	`Œ
+("æ¶ˆæ¯å†…å®¹"));
+
+182 
+msgMod–
+->
+	`£tH—d”D©a
+(2, 
+Qt
+::
+HÜizÚl
+,
+
+183 
+	`Œ
+("å‘å¸ƒæ—¶é—´"));
+
+184 
+msgMod–
+->
+	`£tH—d”D©a
+(5, 
+Qt
+::
+HÜizÚl
+,
 
 185 
-em¶oy“V›w
+	`Œ
+("å¤±æ•ˆæ—¶é—´"));
+
+187 
+msgV›w
  = 
 Ãw
  
 QTabËV›w
 ;
 
-186 
-em¶oy“V›w
+188 
+msgV›w
 ->
 	`£tMod–
 (
-em¶oy“Mod–
+msgMod–
 );
 
-187 
-em¶oy“V›w
+189 
+msgV›w
 ->
 	`£tS–eùiÚMode
 (
@@ -2421,8 +4097,8 @@ QAb¡¿ùI‹mV›w
 SšgËS–eùiÚ
 );
 
-188 
-em¶oy“V›w
+190 
+msgV›w
 ->
 	`£tS–eùiÚBehaviÜ
 (
@@ -2431,8 +4107,8 @@ QAb¡¿ùI‹mV›w
 S–eùRows
 );
 
-189 
-em¶oy“V›w
+191 
+msgV›w
 ->
 	`£tEd™Trigg”s
 (
@@ -2441,8 +4117,8 @@ QAb¡¿ùI‹mV›w
 NoEd™Trigg”s
 );
 
-190 
-em¶oy“V›w
+192 
+msgV›w
 ->
 	`hÜizÚlH—d”
 ()->
@@ -2451,32 +4127,32 @@ em¶oy“V›w
 Œue
 );
 
-191 
-em¶oy“V›w
+193 
+msgV›w
 ->
 	`£tCŞumnHidd’
 (0, 
 Œue
 );
 
-192 
-em¶oy“V›w
+194 
+msgV›w
 ->
 	`£tCŞumnHidd’
 (3, 
 Œue
 );
 
-193 
-em¶oy“V›w
+195 
+msgV›w
 ->
 	`£tCŞumnHidd’
 (4, 
 Œue
 );
 
-195 
-em¶oy“Lab–
+197 
+msgLab–
  = 
 Ãw
  
@@ -2485,15 +4161,15 @@ em¶oy“Lab–
 	`Œ
 ("E&mployees"));
 
-196 
-em¶oy“Lab–
+198 
+msgLab–
 ->
 	`£tBuddy
 (
-em¶oy“V›w
+msgV›w
 );
 
-198 
+200 
 QVBoxLayout
  *
 Ïyout
@@ -2501,41 +4177,41 @@ QVBoxLayout
 Ãw
  QVBoxLayout;
 
-199 
-Ïyout
-->
-	`addWidg‘
-(
-em¶oy“Lab–
-);
-
-200 
-Ïyout
-->
-	`addWidg‘
-(
-em¶oy“V›w
-);
-
 201 
-em¶oy“Pª–
+Ïyout
+->
+	`addWidg‘
+(
+msgLab–
+);
+
+202 
+Ïyout
+->
+	`addWidg‘
+(
+msgV›w
+);
+
+203 
+msgPª–
 ->
 	`£tLayout
 (
 Ïyout
 );
 
-202 
+204 
 	}
 }
 
-204 
+206 
 	gMašFÜm
 ::
 	$ü—‹KaoshiPª–
 ()
 
-206 
+208 
 kaoshiPª–
  = 
 Ãw
@@ -2543,7 +4219,7 @@ kaoshiPª–
 QWidg‘
 ;
 
-207 
+209 
 kaoshiMod–
  = 
 Ãw
@@ -2553,19 +4229,19 @@ kaoshiMod–
 this
 );
 
-208 
+210 
 kaoshiMod–
 ->
 	`£tTabË
 ("kstype");
 
-209 
+211 
 kaoshiMod–
 ->
 	`£Ëù
 ();
 
-210 
+212 
 kaoshiV›w
  = 
 Ãw
@@ -2573,7 +4249,7 @@ kaoshiV›w
 QTabËV›w
 ;
 
-211 
+213 
 kaoshiV›w
 ->
 	`£tMod–
@@ -2581,7 +4257,7 @@ kaoshiV›w
 kaoshiMod–
 );
 
-212 
+214 
 kaoshiV›w
 ->
 	`£tS–eùiÚMode
@@ -2591,7 +4267,7 @@ QAb¡¿ùI‹mV›w
 SšgËS–eùiÚ
 );
 
-213 
+215 
 kaoshiV›w
 ->
 	`£tS–eùiÚBehaviÜ
@@ -2601,7 +4277,7 @@ QAb¡¿ùI‹mV›w
 S–eùRows
 );
 
-214 
+216 
 kaoshiV›w
 ->
 	`£tEd™Trigg”s
@@ -2611,7 +4287,7 @@ QAb¡¿ùI‹mV›w
 NoEd™Trigg”s
 );
 
-215 
+217 
 kaoshiV›w
 ->
 	`hÜizÚlH—d”
@@ -2621,7 +4297,7 @@ kaoshiV›w
 Œue
 );
 
-217 
+219 
 kaoshiLab–
  = 
 Ãw
@@ -2631,7 +4307,7 @@ kaoshiLab–
 	`Œ
 ("E&mployees"));
 
-218 
+220 
 kaoshiLab–
 ->
 	`£tBuddy
@@ -2639,7 +4315,7 @@ kaoshiLab–
 kaoshiV›w
 );
 
-220 
+222 
 	`cÚÃù
 (
 kaoshiV›w
@@ -2647,7 +4323,7 @@ kaoshiV›w
 	`£ËùiÚMod–
 (),
 
-221 
+223 
 	`SIGNAL
 (
 	`cu¼’tRowChªged
@@ -2655,11 +4331,11 @@ kaoshiV›w
 QMod–Index
  &,
 
-222 cÚ¡ 
+224 cÚ¡ 
 QMod–Index
  &)),
 
-223 
+225 
 this
 , 
 	`SLOT
@@ -2667,7 +4343,7 @@ this
 	`upd©eFeV›w
 ()));
 
-224 
+226 
 QVBoxLayout
  *
 Ïyout
@@ -2675,7 +4351,7 @@ QVBoxLayout
 Ãw
  QVBoxLayout;
 
-225 
+227 
 Ïyout
 ->
 	`addWidg‘
@@ -2683,7 +4359,7 @@ QVBoxLayout
 kaoshiLab–
 );
 
-226 
+228 
 Ïyout
 ->
 	`addWidg‘
@@ -2691,7 +4367,7 @@ kaoshiLab–
 kaoshiV›w
 );
 
-227 
+229 
 kaoshiPª–
 ->
 	`£tLayout
@@ -2699,17 +4375,17 @@ kaoshiPª–
 Ïyout
 );
 
-228 
+230 
 	}
 }
 
-230 
+232 
 	gMašFÜm
 ::
 	$upd©eFeV›w
 ()
 
-232 
+234 
 QMod–Index
  
 šdex
@@ -2719,13 +4395,13 @@ kaoshiV›w
 	`cu¼’tIndex
 ();
 
-233 ià(
+235 ià(
 šdex
 .
 	`isV®id
 ()) {
 
-234 
+236 
 QSqlRecÜd
  
 »cÜd
@@ -2739,7 +4415,7 @@ kaoshiMod–
 	`row
 ());
 
-235 
+237 
 QSŒšg
  
 id
@@ -2751,8 +4427,8 @@ id
 	`toSŒšg
 ();
 
-236 
-d•¬tm’tMod–
+238 
+feMod–
 ->
 	`£tF‹r
 (
@@ -2763,15 +4439,15 @@ d•¬tm’tMod–
 id
 ));
 
-238 
-d•¬tm’tLab–
+240 
+feLab–
 ->
 	`£tText
 (
 	`Œ
 (" %1 æ–‡ä»¶ç®¡ç†")
 
-239 .
+241 .
 	`¬g
 (
 »cÜd
@@ -2781,36 +4457,36 @@ d•¬tm’tLab–
 	`toSŒšg
 ()));
 
-242 
-d•¬tm’tMod–
+244 
+feMod–
 ->
 	`£tF‹r
 ("ksid = -1");
 
-243 
-d•¬tm’tLab–
+245 
+feLab–
 ->
 	`£tText
 (
 	`Œ
 ("è€ƒè¯•æ–‡ä»¶"));
 
-245 
-d•¬tm’tMod–
+247 
+feMod–
 ->
 	`£Ëù
 ();
 
-246 
-d•¬tm’tV›w
+248 
+feV›w
 ->
 	`hÜizÚlH—d”
 ()->
 	`£tVisibË
 (
 
-247 
-d•¬tm’tMod–
+249 
+feMod–
 ->
 	`rowCouÁ
 () > 0);
@@ -2878,23 +4554,23 @@ MAINFORM_H
 ;
 
 15 
-	mD•¬tm’t_Id
+	mKsfe_ksfeid
  = 0,
 
 16 
-	mD•¬tm’t_Name
+	mKsfe_ksid
  = 1,
 
 17 
-	mD•¬tm’t_LoÿtiÚId
+	mKsfe_wjmc
  = 2,
 
 18 
-	mf•ubtime
+	mksfe_f•ubtime
  = 3,
 
 19 
-	mwebadd»ss
+	mKsfe_webadd»ss
  = 4,
 
 22 şas 
@@ -2932,15 +4608,15 @@ upd©eFeV›w
 ();
 
 32 
-addD•¬tm’t
+addfe
 ();
 
 33 
-d–‘eD•¬tm’t
+d–‘efe
 ();
 
 34 
-ed™Em¶oy“s
+ed™msgs
 ();
 
 36 
@@ -2948,11 +4624,11 @@ ed™Em¶oy“s
 :
 
 37 
-ü—‹D•¬tm’tPª–
+ü—‹FePª–
 ();
 
 38 
-ü—‹Em¶oy“Pª–
+ü—‹MsgPª–
 ();
 
 39 
@@ -2962,13 +4638,13 @@ ed™Em¶oy“s
 41 
 QSqlR–©iÚ®TabËMod–
  *
-	md•¬tm’tMod–
+	mfeMod–
 ;
 
 42 
 QSqlR–©iÚ®TabËMod–
  *
-	mem¶oy“Mod–
+	mmsgMod–
 ;
 
 43 
@@ -2980,13 +4656,13 @@ QSqlR–©iÚ®TabËMod–
 45 
 QWidg‘
  *
-	md•¬tm’tPª–
+	mfePª–
 ;
 
 46 
 QWidg‘
  *
-	mem¶oy“Pª–
+	mmsgPª–
 ;
 
 47 
@@ -2998,13 +4674,13 @@ QWidg‘
 48 
 QLab–
  *
-	md•¬tm’tLab–
+	mfeLab–
 ;
 
 49 
 QLab–
  *
-	mem¶oy“Lab–
+	mmsgLab–
 ;
 
 50 
@@ -3016,13 +4692,13 @@ QLab–
 52 
 QTabËV›w
  *
-	md•¬tm’tV›w
+	mfeV›w
 ;
 
 53 
 QTabËV›w
  *
-	mem¶oy“V›w
+	mmsgV›w
 ;
 
 54 
@@ -3073,14 +4749,236 @@ QDŸlogBu‰ÚBox
 	mbu‰ÚBox
 ;
 
+	@FileForm.h
+
+1 #iâdeà
+EMPLOYEEFORM_H
+
+
+2 
+	#EMPLOYEEFORM_H
+
+
+	)
+
+3 
+	~<QtWidg‘s
+>
+
+4 
+	~<QDŸlog
+>
+
+6 
+şass
+ 
+	gQComboBox
+;
+
+7 
+şass
+ 
+	gQD©aWidg‘M­³r
+;
+
+8 
+şass
+ 
+	gQD©eEd™
+;
+
+9 
+şass
+ 
+	gQDŸlogBu‰ÚBox
+;
+
+10 
+şass
+ 
+	gQLab–
+;
+
+11 
+şass
+ 
+	gQLšeEd™
+;
+
+12 
+şass
+ 
+	gQPushBu‰Ú
+;
+
+13 
+şass
+ 
+	gQSqlR–©iÚ®TabËMod–
+;
+
+16 
+	mKsfe_Ksfeid
+ = 0,
+
+17 
+	mKsfe_Ksid
+ = 1,
+
+18 
+	mKsfe_Wjmc
+ = 2,
+
+19 
+	mKsfe_F•utime
+ = 3,
+
+20 
+	mKsfe_Webadd»ss
+ = 4,
+
+23 şas 
+	cFeFÜm
+ : 
+public
+ 
+QDŸlog
+
+
+25 
+Q_OBJECT
+
+
+27 
+public
+:
+
+28 
+FeFÜm
+(
+id
+,
+feid
+, 
+QWidg‘
+ *
+·»Á
+ = 0);
+
+30 
+dÚe
+(
+»suÉ
+);
+
+32 
+´iv©e
+ 
+	m¦Ùs
+:
+
+33 
+addFe
+();
+
+34 
+d–‘eFe
+();
+
+36 
+	m´iv©e
+:
+
+37 
+QSqlR–©iÚ®TabËMod–
+ *
+bËMod–
+;
+
+38 
+QD©aWidg‘M­³r
+ *
+	mm­³r
+;
+
+39 
+QLab–
+ *
+	mÇmeLab–
+;
+
+40 
+QLab–
+ *
+	mpubtimeLab–
+;
+
+41 
+QLab–
+ *
+	mwebAddLab–
+;
+
+43 
+QLšeEd™
+ *
+	mÇmeEd™
+;
+
+45 
+QLšeEd™
+ *
+	mÇmeEd™
+;
+
+46 
+QLšeEd™
+ *
+	mpubTimeEd™
+;
+
+47 
+QD©eEd™
+ *
+	mwebAddEd™
+;
+
+49 
+QPushBu‰Ú
+ *
+	maddBu‰Ú
+;
+
+50 
+QPushBu‰Ú
+ *
+	md–‘eBu‰Ú
+;
+
+51 
+QPushBu‰Ú
+ *
+	mşo£Bu‰Ú
+;
+
+52 
+QDŸlogBu‰ÚBox
+ *
+	mbu‰ÚBox
+;
+
 	@
 1
 .
 0
-5
-65
+9
+118
 employeeform.cpp
 employeeform.h
+fileform.cpp
+fileform.h
+fileform_copy.cpp
 main.cpp
 mainform.cpp
 mainform.h
+FileForm.h

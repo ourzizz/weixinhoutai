@@ -32,6 +32,7 @@ private slots:
     void addfile();
     void deletefile();
     void editmsgs();
+    void editfile();
 
 private:
     void createFilePanel();
@@ -59,6 +60,7 @@ private:
     QPushButton *addButton;
     QPushButton *deleteButton;
     QPushButton *editButton;
+    QPushButton *editFileButton;
     QPushButton *quitButton;
     QDialogButtonBox *buttonBox;
 };

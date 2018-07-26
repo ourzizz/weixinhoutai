@@ -7,4 +7,4 @@ HEADERS       = employeeform.h \
 SOURCES       = employeeform.cpp \
                 main.cpp \
                 mainform.cpp \
-    fileform_copy.cpp
+    fileform.cpp

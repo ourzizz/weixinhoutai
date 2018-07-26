@@ -22,17 +22,20 @@ MainForm::MainForm()
     addButton = new QPushButton(tr("&添加文件."));
     deleteButton = new QPushButton(tr("&删除文件."));
     editButton = new QPushButton(tr("编辑消息"));
+    editFileButton = new QPushButton(tr("编辑文件"));
     quitButton = new QPushButton(tr("&Quit"));
 
     buttonBox = new QDialogButtonBox;
     buttonBox->addButton(addButton, QDialogButtonBox::ActionRole);
     buttonBox->addButton(deleteButton, QDialogButtonBox::ActionRole);
     buttonBox->addButton(editButton, QDialogButtonBox::ActionRole);
+    buttonBox->addButton(editFileButton, QDialogButtonBox::ActionRole);
     buttonBox->addButton(quitButton, QDialogButtonBox::AcceptRole);
 
     connect(addButton, SIGNAL(clicked()), this, SLOT(addfile()));
     connect(deleteButton, SIGNAL(clicked()), this, SLOT(deletefile()));
     connect(editButton, SIGNAL(clicked()), this, SLOT(editmsgs()));
+    connect(editFileButton, SIGNAL(clicked()), this, SLOT(editfile()));
     connect(quitButton, SIGNAL(clicked()), this, SLOT(close()));
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
@@ -130,6 +133,18 @@ void MainForm::editmsgs()
     updateMsgView();
 }/*}}}*/
 
+void MainForm::editfile()
+{//弹出编辑框,这个函数在msgspanel没出来之前可以pass/*{{{*/
+    int ksfileid = -1;
+    QModelIndex index = fileView->currentIndex();
+    if (index.isValid()) {
+        QSqlRecord record = fileModel->record(index.row());
+        ksfileid = record.value(Ksfile_ksfileid).toInt();
+    }
+    FileForm form(ksfileid,this);
+    form.exec();
+    updateFileView();
+}/*}}}*/
 void MainForm::createFilePanel()
 {/*{{{*/
     filePanel = new QWidget;

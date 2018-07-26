@@ -1,5 +1,5 @@
-#ifndef EMPLOYEEFORM_H
-#define EMPLOYEEFORM_H
+#ifndef FILEFORM_H
+#define FILEFORM_H
 #include <QtWidgets>
 #include <QDialog>
 
@@ -25,9 +25,10 @@ class FileForm : public QDialog
     Q_OBJECT
 
     public:
-        FileForm(int id,int fileid, QWidget *parent = 0);
+        FileForm(int msgid, QWidget *parent = 0);
 
         void done(int result);
+        void manualSubmit();
 
         private slots:
             void addFile();
@@ -37,18 +38,17 @@ class FileForm : public QDialog
         QSqlRelationalTableModel *tableModel;
         QDataWidgetMapper *mapper;
         QLabel *nameLabel;
-        QLabel *pubtimeLabel;
+        QLabel *pubTimeLabel;
         QLabel *webAddLabel;
 
         QLineEdit *nameEdit;
-        //QComboBox *departmentComboBox;
-        QLineEdit *nameEdit;
-        QLineEdit *pubTimeEdit;
-        QDateEdit *webAddEdit;
+        QDateEdit *pubTimeEdit;
+        QLineEdit *webAddEdit;
 
         QPushButton *addButton;
         QPushButton *deleteButton;
         QPushButton *closeButton;
+        QPushButton *submitButton;
         QDialogButtonBox *buttonBox;
 };
 
