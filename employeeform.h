@@ -13,12 +13,12 @@ class QPushButton;
 class QSqlRelationalTableModel;
 
 enum {
-    Employee_Id = 0,
-    Employee_Name = 1,
-    Employee_DepartmentId = 2,
-    Employee_Extension = 3,
-    Employee_Email = 4,
-    Employee_StartDate = 5
+    Msg_Id = 0,
+    Msg_Msgcontent = 1,
+    Msg_msgpubtime = 2,
+    Msg_Fileid = 3,
+    Msg_Ksid = 4,
+    Msg_Deadtime = 5
 };
 
 class EmployeeForm : public QDialog
@@ -26,7 +26,7 @@ class EmployeeForm : public QDialog
     Q_OBJECT
 
 public:
-    EmployeeForm(int id, QWidget *parent = 0);
+    EmployeeForm(int id,int fileid, QWidget *parent = 0);
 
     void done(int result);
 

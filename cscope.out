@@ -1,4 +1,4 @@
-cscope 16 C:\Users\Administrator\Desktop\staffmanager               0000017805
+cscope 16 C:\Qt\Qt5.7.1\5.7\mingw53_32\myproj\weixinhoutai               0000016858
 	@employeeform.cpp
 
 1 
@@ -1297,21 +1297,39 @@ QSqlD©aba£
 db
  = QSqlD©aba£::
 	`addD©aba£
-("QSQLITE");
+("QMYSQL");
 
-11 
+12 
+db
+.
+	`£tHo¡Name
+("58.87.119.233");
+
+13 
 db
 .
 	`£tD©aba£Name
-("personnel.dat");
+("bjks2");
 
-12 ià(!
+14 
+db
+.
+	`£tU£rName
+("root");
+
+15 
+db
+.
+	`£tPasswÜd
+("123123");
+
+16 ià(!
 db
 .
 	`Ý’
 ()) {
 
-13 
+17 
 QMes§geBox
 ::
 	`w¬nšg
@@ -1321,7 +1339,7 @@ QObjeù
 	`Œ
 ("Database Error"),
 
-14 
+18 
 db
 .
 	`Ï¡E¼Ü
@@ -1329,367 +1347,19 @@ db
 	`‹xt
 ());
 
-15  
+19  
 çl£
 ;
 
-17  
+21  
 Œue
 ;
 
-18 
-	}
-}
-
-20 
-	$ü—‹FakeD©a
-()
-
 22 
-QSŒšgLi¡
- 
-Çmes
-;
-
-23 
-Çmes
- << "Eabha Biddell" << "Prentice Hutchison"
-
-44 
-QProg»ssDŸlog
- 
-´og»ss
-;
-
-45 
-´og»ss
-.
-	`£tWšdowMod®™y
-(
-Qt
-::
-WšdowMod®
-);
-
-46 
-´og»ss
-.
-	`£tWšdowT™Ë
-(
-QObjeù
-::
-	`Œ
-("Staff Manager"));
-
-47 
-´og»ss
-.
-	`£tLab–Text
-(
-QObjeù
-::
-	`Œ
-("Creating database..."));
-
-48 
-´og»ss
-.
-	`£tMšimum
-(0);
-
-49 
-´og»ss
-.
-	`£tMaximum
-(
-Çmes
-.
-	`couÁ
-() + 6);
-
-50 
-´og»ss
-.
-	`£tV®ue
-(1);
-
-51 
-qAµ
-->
-	`´oûssEv’ts
-();
-
-52 
-QSqlQu”y
- 
-qu”y
-;
-
-53 
-qu”y
-.
-	`exec
-("DROP TABLE department");
-
-54 
-qu”y
-.
-	`exec
-("DROP TABLEƒmployee");
-
-55 
-qu”y
-.
-	`exec
-("DROP TABLE†ocation");
-
-57 
-´og»ss
-.
-	`£tV®ue
-(2);
-
-58 
-qAµ
-->
-	`´oûssEv’ts
-();
-
-59 
-qu”y
-.
-	`exec
-("CREATE TABLE†ocation ("
-
-62 
-´og»ss
-.
-	`£tV®ue
-(3);
-
-63 
-qAµ
-->
-	`´oûssEv’ts
-();
-
-64 
-qu”y
-.
-	`exec
-("CREATE TABLE department ("
-
-69 
-´og»ss
-.
-	`£tV®ue
-(4);
-
-70 
-qAµ
-->
-	`´oûssEv’ts
-();
-
-71 
-qu”y
-.
-	`exec
-("CREATE TABLEƒmployee ("
-
-80 
-´og»ss
-.
-	`£tV®ue
-(5);
-
-81 
-qAµ
-->
-	`´oûssEv’ts
-();
-
-82 
-qu”y
-.
-	`exec
-("INSERT INTO†ocation (name) VALUES ("
-
-84 
-qu”y
-.
-	`exec
-("INSERT INTO†ocation (name) VALUES ("
-
-86 
-qu”y
-.
-	`exec
-("INSERT INTO†ocation (name) VALUES ("
-
-88 
-qu”y
-.
-	`exec
-("INSERT INTO†ocation (name) VALUES ("
-
-90 
-qu”y
-.
-	`exec
-("INSERT INTO department (name,†ocationid) VALUES ("
-
-92 
-qu”y
-.
-	`exec
-("INSERT INTO department (name,†ocationid) VALUES ("
-
-94 
-qu”y
-.
-	`exec
-("INSERT INTO department (name,†ocationid) VALUES ("
-
-96 
-qu”y
-.
-	`exec
-("INSERT INTO department (name,†ocationid) VALUES ("
-
-98 
-qu”y
-.
-	`exec
-("INSERT INTO department (name,†ocationid) VALUES ("
-
-101 
-´og»ss
-.
-	`£tV®ue
-(6);
-
-102 
-qAµ
-->
-	`´oûssEv’ts
-();
-
-103 
-couÁ
- = 0;
-
-104 
-qu”y
-.
-	`´•¬e
-("INSERT INTOƒmployee (name, departmentid, "
-
-108 
-	`fÜ—ch
- (
-QSŒšg
- 
-Çme
-, 
-Çmes
-) {
-
-109 
-qu”y
-.
-	`bšdV®ue
-(":Çme", 
-Çme
-);
-
-110 
-qu”y
-.
-	`bšdV®ue
-(":d•¬tm’tid", 1 + (
-¡d
-::
-	`¿nd
-() % 5));
-
-111 
-qu”y
-.
-	`bšdV®ue
-(":ex‹nsiÚ", 400 + (
-¡d
-::
-	`¿nd
-() % 100));
-
-112 
-qu”y
-.
-	`bšdV®ue
-(":emaž", 
-Çme
-.
-	`toLow”
-().
-	`»¶aû
-(" ", ".") +
-
-114 
-qu”y
-.
-	`bšdV®ue
-(":startdate",
-
-115 
-QD©e
-::
-	`cu¼’tD©e
-().
-	`addDays
-(-(
-¡d
-::
-	`¿nd
-() % 3600)));
-
-116 
-qu”y
-.
-	`exec
-();
-
-117 ++
-couÁ
-;
-
-118 
-´og»ss
-.
-	`£tV®ue
-(
-couÁ
- + 6);
-
-120 
-´og»ss
-.
-	`£tV®ue
-Õrog»ss.
-	`maximum
-());
-
-121 
-qAµ
-->
-	`´oûssEv’ts
-();
-
-122 
 	}
 }
 
-124 
+24 
 	$maš
 (
 ¬gc
@@ -1697,7 +1367,7 @@ qAµ
 ¬gv
 [])
 
-126 
+26 
 QAµliÿtiÚ
  
 	`­p
@@ -1707,53 +1377,35 @@ QAµliÿtiÚ
 ¬gv
 );
 
-128 
-boÞ
- 
-exi¡šgD©a
- = 
-QFže
-::
-	`exi¡s
-("personnel.dat");
-
-129 ià(!
+27 
 	`ü—‹CÚÃùiÚ
-())
-
-131 ià(!
-exi¡šgD©a
-)
-
-132 
-	`ü—‹FakeD©a
 ();
 
-134 
+28 
 MašFÜm
  
 fÜm
 ;
 
-135 
+29 
 fÜm
 .
 	`»size
 (500, 600);
 
-136 
+30 
 fÜm
 .
 	`show
 ();
 
-137  
+31  
 ­p
 .
 	`exec
 ();
 
-138 
+32 
 	}
 }
 
@@ -1765,6 +1417,10 @@ fÜm
 
 2 
 	~<QtSql
+>
+
+3 
+	~<SŒšg
 >
 
 4 
@@ -1789,7 +1445,11 @@ fÜm
 	`ü—‹Em¶oy“Pª–
 ();
 
-12 
+11 
+	`ü—‹KaoshiPª–
+();
+
+13 
 ¥l™‹r
  = 
 Ãw
@@ -1801,7 +1461,7 @@ Qt
 V”tiÿl
 );
 
-13 
+14 
 ¥l™‹r
 ->
 	`£tF¿meStyË
@@ -1811,7 +1471,7 @@ QF¿me
 StyËdPª–
 );
 
-14 
+15 
 ¥l™‹r
 ->
 	`addWidg‘
@@ -1819,7 +1479,7 @@ StyËdPª–
 d•¬tm’tPª–
 );
 
-15 
+16 
 ¥l™‹r
 ->
 	`addWidg‘
@@ -1827,7 +1487,7 @@ d•¬tm’tPª–
 em¶oy“Pª–
 );
 
-17 
+21 
 addBu‰Ú
  = 
 Ãw
@@ -1837,7 +1497,7 @@ addBu‰Ú
 	`Œ
 ("&Add Dept."));
 
-18 
+22 
 d–‘eBu‰Ú
  = 
 Ãw
@@ -1847,7 +1507,7 @@ d–‘eBu‰Ú
 	`Œ
 ("&Delete Dept."));
 
-19 
+23 
 ed™Bu‰Ú
  = 
 Ãw
@@ -1857,7 +1517,7 @@ ed™Bu‰Ú
 	`Œ
 ("&Edit Employees..."));
 
-20 
+24 
 qu™Bu‰Ú
  = 
 Ãw
@@ -1867,7 +1527,7 @@ qu™Bu‰Ú
 	`Œ
 ("&Quit"));
 
-22 
+26 
 bu‰ÚBox
  = 
 Ãw
@@ -1875,7 +1535,7 @@ bu‰ÚBox
 QDŸlogBu‰ÚBox
 ;
 
-23 
+27 
 bu‰ÚBox
 ->
 	`addBu‰Ú
@@ -1887,7 +1547,7 @@ QDŸlogBu‰ÚBox
 AùiÚRÞe
 );
 
-24 
+28 
 bu‰ÚBox
 ->
 	`addBu‰Ú
@@ -1899,7 +1559,7 @@ QDŸlogBu‰ÚBox
 AùiÚRÞe
 );
 
-25 
+29 
 bu‰ÚBox
 ->
 	`addBu‰Ú
@@ -1911,7 +1571,7 @@ QDŸlogBu‰ÚBox
 AùiÚRÞe
 );
 
-26 
+30 
 bu‰ÚBox
 ->
 	`addBu‰Ú
@@ -1923,7 +1583,7 @@ QDŸlogBu‰ÚBox
 Acû±RÞe
 );
 
-28 
+32 
 	`cÚÃù
 (
 addBu‰Ú
@@ -1939,7 +1599,7 @@ this
 	`addD•¬tm’t
 ()));
 
-29 
+33 
 	`cÚÃù
 (
 d–‘eBu‰Ú
@@ -1947,9 +1607,7 @@ d–‘eBu‰Ú
 	`SIGNAL
 (
 	`þicked
-()),
-
-30 
+()), 
 this
 , 
 	`SLOT
@@ -1957,7 +1615,7 @@ this
 	`d–‘eD•¬tm’t
 ()));
 
-31 
+34 
 	`cÚÃù
 (
 ed™Bu‰Ú
@@ -1973,7 +1631,7 @@ this
 	`ed™Em¶oy“s
 ()));
 
-32 
+35 
 	`cÚÃù
 (
 qu™Bu‰Ú
@@ -1989,7 +1647,7 @@ this
 	`þo£
 ()));
 
-34 
+37 
 QVBoxLayout
  *
 mašLayout
@@ -1997,7 +1655,15 @@ mašLayout
 Ãw
  QVBoxLayout;
 
-35 
+38 
+mašLayout
+->
+	`addWidg‘
+(
+kaoshiPª–
+);
+
+39 
 mašLayout
 ->
 	`addWidg‘
@@ -2005,7 +1671,7 @@ mašLayout
 ¥l™‹r
 );
 
-36 
+40 
 mašLayout
 ->
 	`addWidg‘
@@ -2013,19 +1679,19 @@ mašLayout
 bu‰ÚBox
 );
 
-37 
+42 
 	`£tLayout
 (
 mašLayout
 );
 
-39 
+44 
 	`£tWšdowT™Ë
 (
 	`Œ
 ("Staff Manager"));
 
-40 
+46 
 d•¬tm’tV›w
 ->
 	`£tCu¼’tIndex
@@ -2035,17 +1701,17 @@ d•¬tm’tMod–
 	`šdex
 (0, 0));
 
-41 
+47 
 	}
 }
 
-43 
+49 
 	gMašFÜm
 ::
-	$upd©eEm¶oy“V›w
+	$upd©eMsgV›w
 ()
 
-45 
+51 
 QMod–Index
  
 šdex
@@ -2055,13 +1721,13 @@ d•¬tm’tV›w
 	`cu¼’tIndex
 ();
 
-46 ià(
+52 ià(
 šdex
 .
 	`isV®id
 ()) {
 
-47 
+53 
 QSqlRecÜd
  
 »cÜd
@@ -2075,53 +1741,53 @@ d•¬tm’tMod–
 	`row
 ());
 
-48 
+54 
 id
  = 
 »cÜd
 .
 	`v®ue
-("id").
+("ksfžeid").
 	`toIÁ
 ();
 
-49 
+55 
 em¶oy“Mod–
 ->
 	`£tFž‹r
 (
 	`QSŒšg
-("d•¬tm’tid = %1").
+("ksmsg.ksfžeid = %1").
 	`¬g
 (
 id
 ));
 
-50 
+56 
 em¶oy“Lab–
 ->
 	`£tText
 (
 	`Œ
-("E&mployees inhe %1 Department")
+("é…ç½® %1 è€ƒè¯•çš„æ¶ˆæ¯msg")
 
-51 .
+57 .
 	`¬g
 (
 »cÜd
 .
 	`v®ue
-("Çme").
+("ksid").
 	`toSŒšg
 ()));
 
-53 
+60 
 em¶oy“Mod–
 ->
 	`£tFž‹r
-("departmentid = -1");
+("ksfileid = -1");
 
-54 
+61 
 em¶oy“Lab–
 ->
 	`£tText
@@ -2129,13 +1795,13 @@ em¶oy“Lab–
 	`Œ
 ("E&mployees"));
 
-56 
+63 
 em¶oy“Mod–
 ->
 	`£Ëù
 ();
 
-57 
+64 
 em¶oy“V›w
 ->
 	`hÜizÚlH—d”
@@ -2143,23 +1809,23 @@ em¶oy“V›w
 	`£tVisibË
 (
 
-58 
+65 
 em¶oy“Mod–
 ->
 	`rowCouÁ
 () > 0);
 
-59 
+68 
 	}
 }
 
-61 
+70 
 	gMašFÜm
 ::
 	$addD•¬tm’t
 ()
 
-63 
+72 
 row
  = 
 d•¬tm’tMod–
@@ -2167,7 +1833,7 @@ d•¬tm’tMod–
 	`rowCouÁ
 ();
 
-64 
+73 
 d•¬tm’tMod–
 ->
 	`š£¹Row
@@ -2175,7 +1841,7 @@ d•¬tm’tMod–
 row
 );
 
-65 
+74 
 QMod–Index
  
 šdex
@@ -2189,7 +1855,7 @@ row
 D•¬tm’t_Name
 );
 
-66 
+75 
 d•¬tm’tV›w
 ->
 	`£tCu¼’tIndex
@@ -2197,7 +1863,7 @@ d•¬tm’tV›w
 šdex
 );
 
-67 
+76 
 d•¬tm’tV›w
 ->
 	`ed™
@@ -2205,17 +1871,17 @@ d•¬tm’tV›w
 šdex
 );
 
-68 
+77 
 	}
 }
 
-70 
+79 
 	gMašFÜm
 ::
 	$d–‘eD•¬tm’t
 ()
 
-72 
+81 
 QMod–Index
  
 šdex
@@ -2225,13 +1891,13 @@ d•¬tm’tV›w
 	`cu¼’tIndex
 ();
 
-73 ià(!
+82 ià(!
 šdex
 .
 	`isV®id
 ())
 
-76 
+85 
 QSqlD©aba£
 ::
 	`d©aba£
@@ -2239,7 +1905,7 @@ QSqlD©aba£
 	`Œª§ùiÚ
 ();
 
-77 
+86 
 QSqlRecÜd
  
 »cÜd
@@ -2253,7 +1919,7 @@ d•¬tm’tMod–
 	`row
 ());
 
-78 
+87 
 id
  = 
 »cÜd
@@ -2265,11 +1931,11 @@ D•¬tm’t_Id
 	`toIÁ
 ();
 
-79 
+88 
 numEm¶oy“s
  = 0;
 
-81 
+90 
 QSqlQu”y
  
 	`qu”y
@@ -2277,19 +1943,19 @@ QSqlQu”y
 	`QSŒšg
 ("SELECT COUNT(*) FROMƒmployee "
 
-82 "WHERE d•¬tm’tid = %1").
+91 "WHERE d•¬tm’tid = %1").
 	`¬g
 (
 id
 ));
 
-83 ià(
+92 ià(
 qu”y
 .
 	`Ãxt
 ())
 
-84 
+93 
 numEm¶oy“s
  = 
 qu”y
@@ -2299,11 +1965,11 @@ qu”y
 	`toIÁ
 ();
 
-85 ià(
+94 ià(
 numEm¶oy“s
  > 0) {
 
-86 
+95 
 r
  = 
 QMes§geBox
@@ -2315,11 +1981,11 @@ this
 	`Œ
 ("Delete Department"),
 
-87 
+96 
 	`Œ
 ("Delete %1‡nd‡ll itsƒmployees?")
 
-88 .
+97 .
 	`¬g
 (
 »cÜd
@@ -2331,7 +1997,7 @@ D•¬tm’t_Name
 	`toSŒšg
 ()),
 
-89 
+98 
 QMes§geBox
 ::
 Yes
@@ -2339,7 +2005,7 @@ Yes
 No
 );
 
-90 ià(
+99 ià(
 r
  =ð
 QMes§geBox
@@ -2347,7 +2013,7 @@ QMes§geBox
 No
 ) {
 
-91 
+100 
 QSqlD©aba£
 ::
 	`d©aba£
@@ -2355,7 +2021,7 @@ QSqlD©aba£
 	`rÞlback
 ();
 
-95 
+104 
 qu”y
 .
 	`exec
@@ -2363,13 +2029,13 @@ qu”y
 	`QSŒšg
 ("DELETE FROMƒmployee "
 
-96 "WHERE d•¬tm’tid = %1").
+105 "WHERE d•¬tm’tid = %1").
 	`¬g
 (
 id
 ));
 
-99 
+108 
 d•¬tm’tMod–
 ->
 	`»moveRow
@@ -2379,13 +2045,13 @@ d•¬tm’tMod–
 	`row
 ());
 
-100 
+109 
 d•¬tm’tMod–
 ->
 	`subm™AÎ
 ();
 
-101 
+110 
 QSqlD©aba£
 ::
 	`d©aba£
@@ -2393,31 +2059,31 @@ QSqlD©aba£
 	`comm™
 ();
 
-103 
-	`upd©eEm¶oy“V›w
+112 
+	`upd©eMsgV›w
 ();
 
-104 
+113 
 d•¬tm’tV›w
 ->
 	`£tFocus
 ();
 
-105 
+114 
 	}
 }
 
-107 
+116 
 	gMašFÜm
 ::
 	$ed™Em¶oy“s
 ()
 
-109 
+118 
 em¶oy“Id
  = -1;
 
-110 
+119 
 QMod–Index
  
 šdex
@@ -2427,13 +2093,13 @@ em¶oy“V›w
 	`cu¼’tIndex
 ();
 
-111 ià(
+120 ià(
 šdex
 .
 	`isV®id
 ()) {
 
-112 
+121 
 QSqlRecÜd
  
 »cÜd
@@ -2447,7 +2113,7 @@ em¶oy“Mod–
 	`row
 ());
 
-113 
+122 
 em¶oy“Id
  = 
 »cÜd
@@ -2459,7 +2125,7 @@ Em¶oy“_Id
 	`toIÁ
 ();
 
-116 
+125 
 Em¶oy“FÜm
  
 	`fÜm
@@ -2469,27 +2135,27 @@ em¶oy“Id
 this
 );
 
-117 
+126 
 fÜm
 .
 	`exec
 ();
 
-118 
-	`upd©eEm¶oy“V›w
+127 
+	`upd©eMsgV›w
 ();
 
-119 
+128 
 	}
 }
 
-121 
+130 
 	gMašFÜm
 ::
 	$ü—‹D•¬tm’tPª–
 ()
 
-123 
+132 
 d•¬tm’tPª–
  = 
 Ãw
@@ -2497,7 +2163,7 @@ d•¬tm’tPª–
 QWidg‘
 ;
 
-125 
+134 
 d•¬tm’tMod–
  = 
 Ãw
@@ -2507,25 +2173,13 @@ d•¬tm’tMod–
 this
 );
 
-126 
+135 
 d•¬tm’tMod–
 ->
 	`£tTabË
-("department");
+("ksfile");
 
-127 
-d•¬tm’tMod–
-->
-	`£tR–©iÚ
-(
-D•¬tm’t_LoÿtiÚId
-,
-
-128 
-	`QSqlR–©iÚ
-("location", "id", "name"));
-
-129 
+138 
 d•¬tm’tMod–
 ->
 	`£tSÜt
@@ -2537,45 +2191,13 @@ Qt
 AsûndšgOrd”
 );
 
-130 
-d•¬tm’tMod–
-->
-	`£tH—d”D©a
-(
-D•¬tm’t_Name
-, 
-Qt
-::
-HÜizÚl
-,
-
-131 
-	`Œ
-("Dept."));
-
-132 
-d•¬tm’tMod–
-->
-	`£tH—d”D©a
-(
-D•¬tm’t_LoÿtiÚId
-,
-
-133 
-Qt
-::
-HÜizÚl
-, 
-	`Œ
-("Location"));
-
-134 
+143 
 d•¬tm’tMod–
 ->
 	`£Ëù
 ();
 
-136 
+145 
 d•¬tm’tV›w
  = 
 Ãw
@@ -2583,7 +2205,7 @@ d•¬tm’tV›w
 QTabËV›w
 ;
 
-137 
+146 
 d•¬tm’tV›w
 ->
 	`£tMod–
@@ -2591,7 +2213,7 @@ d•¬tm’tV›w
 d•¬tm’tMod–
 );
 
-138 
+147 
 d•¬tm’tV›w
 ->
 	`£tI‹mD–eg©e
@@ -2603,19 +2225,19 @@ d•¬tm’tV›w
 this
 ));
 
-139 
+148 
 d•¬tm’tV›w
 ->
 	`£tS–eùiÚMode
 (
 
-140 
+149 
 QAb¡¿ùI‹mV›w
 ::
 SšgËS–eùiÚ
 );
 
-141 
+150 
 d•¬tm’tV›w
 ->
 	`£tS–eùiÚBehaviÜ
@@ -2625,23 +2247,23 @@ QAb¡¿ùI‹mV›w
 S–eùRows
 );
 
-142 
-d•¬tm’tV›w
-->
-	`£tCÞumnHidd’
-(
-D•¬tm’t_Id
-, 
-Œue
-);
-
-143 
+152 
 d•¬tm’tV›w
 ->
 	`»sizeCÞumnsToCÚ‹Ás
 ();
 
-144 
+153 
+d•¬tm’tV›w
+->
+	`£tEd™Trigg”s
+(
+QAb¡¿ùI‹mV›w
+::
+NoEd™Trigg”s
+);
+
+154 
 d•¬tm’tV›w
 ->
 	`hÜizÚlH—d”
@@ -2651,7 +2273,7 @@ d•¬tm’tV›w
 Œue
 );
 
-146 
+156 
 d•¬tm’tLab–
  = 
 Ãw
@@ -2661,7 +2283,7 @@ d•¬tm’tLab–
 	`Œ
 ("Depar&tments"));
 
-147 
+157 
 d•¬tm’tLab–
 ->
 	`£tBuddy
@@ -2669,7 +2291,7 @@ d•¬tm’tLab–
 d•¬tm’tV›w
 );
 
-149 
+159 
 	`cÚÃù
 (
 d•¬tm’tV›w
@@ -2677,7 +2299,7 @@ d•¬tm’tV›w
 	`£ËùiÚMod–
 (),
 
-150 
+160 
 	`SIGNAL
 (
 	`cu¼’tRowChªged
@@ -2685,19 +2307,19 @@ d•¬tm’tV›w
 QMod–Index
  &,
 
-151 cÚ¡ 
+161 cÚ¡ 
 QMod–Index
  &)),
 
-152 
+162 
 this
 , 
 	`SLOT
 (
-	`upd©eEm¶oy“V›w
+	`upd©eMsgV›w
 ()));
 
-154 
+164 
 QVBoxLayout
  *
 Ïyout
@@ -2705,7 +2327,7 @@ QVBoxLayout
 Ãw
  QVBoxLayout;
 
-155 
+165 
 Ïyout
 ->
 	`addWidg‘
@@ -2713,7 +2335,7 @@ QVBoxLayout
 d•¬tm’tLab–
 );
 
-156 
+166 
 Ïyout
 ->
 	`addWidg‘
@@ -2721,7 +2343,7 @@ d•¬tm’tLab–
 d•¬tm’tV›w
 );
 
-157 
+167 
 d•¬tm’tPª–
 ->
 	`£tLayout
@@ -2729,17 +2351,17 @@ d•¬tm’tPª–
 Ïyout
 );
 
-158 
+168 
 	}
 }
 
-160 
+170 
 	gMašFÜm
 ::
 	$ü—‹Em¶oy“Pª–
 ()
 
-162 
+172 
 em¶oy“Pª–
  = 
 Ãw
@@ -2747,7 +2369,7 @@ em¶oy“Pª–
 QWidg‘
 ;
 
-164 
+173 
 em¶oy“Mod–
  = 
 Ãw
@@ -2757,85 +2379,23 @@ em¶oy“Mod–
 this
 );
 
-165 
+174 
 em¶oy“Mod–
 ->
 	`£tTabË
-("employee");
+("ksmsg");
 
-166 
+175 
 em¶oy“Mod–
 ->
 	`£tR–©iÚ
-(
-Em¶oy“_D•¬tm’tId
-,
-
-167 
-	`QSqlR–©iÚ
-("department", "id", "name"));
-
-168 
-em¶oy“Mod–
-->
-	`£tSÜt
-(
-Em¶oy“_Name
-, 
-Qt
-::
-AsûndšgOrd”
-);
-
-169 
-em¶oy“Mod–
-->
-	`£tH—d”D©a
-(
-Em¶oy“_Name
-, 
-Qt
-::
-HÜizÚl
-,
-
-170 
-	`Œ
-("Name"));
-
-171 
-em¶oy“Mod–
-->
-	`£tH—d”D©a
-(
-Em¶oy“_Ex‹nsiÚ
-, 
-Qt
-::
-HÜizÚl
-,
-
-172 
-	`Œ
-("Ext."));
-
-173 
-em¶oy“Mod–
-->
-	`£tH—d”D©a
-(
-Em¶oy“_Emaž
-, 
-Qt
-::
-HÜizÚl
-,
-
-174 
-	`Œ
-("Email"));
+(3,
 
 176 
+	`QSqlR–©iÚ
+("ksfile","ksfileid","ksid"));
+
+185 
 em¶oy“V›w
  = 
 Ãw
@@ -2843,7 +2403,7 @@ em¶oy“V›w
 QTabËV›w
 ;
 
-177 
+186 
 em¶oy“V›w
 ->
 	`£tMod–
@@ -2851,7 +2411,7 @@ em¶oy“V›w
 em¶oy“Mod–
 );
 
-178 
+187 
 em¶oy“V›w
 ->
 	`£tS–eùiÚMode
@@ -2861,7 +2421,7 @@ QAb¡¿ùI‹mV›w
 SšgËS–eùiÚ
 );
 
-179 
+188 
 em¶oy“V›w
 ->
 	`£tS–eùiÚBehaviÜ
@@ -2871,7 +2431,7 @@ QAb¡¿ùI‹mV›w
 S–eùRows
 );
 
-180 
+189 
 em¶oy“V›w
 ->
 	`£tEd™Trigg”s
@@ -2881,7 +2441,7 @@ QAb¡¿ùI‹mV›w
 NoEd™Trigg”s
 );
 
-181 
+190 
 em¶oy“V›w
 ->
 	`hÜizÚlH—d”
@@ -2891,37 +2451,31 @@ em¶oy“V›w
 Œue
 );
 
-182 
+191 
 em¶oy“V›w
 ->
 	`£tCÞumnHidd’
-(
-Em¶oy“_Id
-, 
+(0, 
 Œue
 );
 
-183 
+192 
 em¶oy“V›w
 ->
 	`£tCÞumnHidd’
-(
-Em¶oy“_D•¬tm’tId
-, 
+(3, 
 Œue
 );
 
-184 
+193 
 em¶oy“V›w
 ->
 	`£tCÞumnHidd’
-(
-Em¶oy“_S¹D©e
-, 
+(4, 
 Œue
 );
 
-186 
+195 
 em¶oy“Lab–
  = 
 Ãw
@@ -2931,7 +2485,7 @@ em¶oy“Lab–
 	`Œ
 ("E&mployees"));
 
-187 
+196 
 em¶oy“Lab–
 ->
 	`£tBuddy
@@ -2939,7 +2493,7 @@ em¶oy“Lab–
 em¶oy“V›w
 );
 
-189 
+198 
 QVBoxLayout
  *
 Ïyout
@@ -2947,7 +2501,7 @@ QVBoxLayout
 Ãw
  QVBoxLayout;
 
-190 
+199 
 Ïyout
 ->
 	`addWidg‘
@@ -2955,7 +2509,7 @@ QVBoxLayout
 em¶oy“Lab–
 );
 
-191 
+200 
 Ïyout
 ->
 	`addWidg‘
@@ -2963,7 +2517,7 @@ em¶oy“Lab–
 em¶oy“V›w
 );
 
-192 
+201 
 em¶oy“Pª–
 ->
 	`£tLayout
@@ -2971,7 +2525,297 @@ em¶oy“Pª–
 Ïyout
 );
 
-193 
+202 
+	}
+}
+
+204 
+	gMašFÜm
+::
+	$ü—‹KaoshiPª–
+()
+
+206 
+kaoshiPª–
+ = 
+Ãw
+ 
+QWidg‘
+;
+
+207 
+kaoshiMod–
+ = 
+Ãw
+ 
+	`QSqlR–©iÚ®TabËMod–
+(
+this
+);
+
+208 
+kaoshiMod–
+->
+	`£tTabË
+("kstype");
+
+209 
+kaoshiMod–
+->
+	`£Ëù
+();
+
+210 
+kaoshiV›w
+ = 
+Ãw
+ 
+QTabËV›w
+;
+
+211 
+kaoshiV›w
+->
+	`£tMod–
+(
+kaoshiMod–
+);
+
+212 
+kaoshiV›w
+->
+	`£tS–eùiÚMode
+(
+QAb¡¿ùI‹mV›w
+::
+SšgËS–eùiÚ
+);
+
+213 
+kaoshiV›w
+->
+	`£tS–eùiÚBehaviÜ
+(
+QAb¡¿ùI‹mV›w
+::
+S–eùRows
+);
+
+214 
+kaoshiV›w
+->
+	`£tEd™Trigg”s
+(
+QAb¡¿ùI‹mV›w
+::
+NoEd™Trigg”s
+);
+
+215 
+kaoshiV›w
+->
+	`hÜizÚlH—d”
+()->
+	`£tSŒ‘chLa¡SeùiÚ
+(
+Œue
+);
+
+217 
+kaoshiLab–
+ = 
+Ãw
+ 
+	`QLab–
+(
+	`Œ
+("E&mployees"));
+
+218 
+kaoshiLab–
+->
+	`£tBuddy
+(
+kaoshiV›w
+);
+
+220 
+	`cÚÃù
+(
+kaoshiV›w
+->
+	`£ËùiÚMod–
+(),
+
+221 
+	`SIGNAL
+(
+	`cu¼’tRowChªged
+(cÚ¡ 
+QMod–Index
+ &,
+
+222 cÚ¡ 
+QMod–Index
+ &)),
+
+223 
+this
+, 
+	`SLOT
+(
+	`upd©eFžeV›w
+()));
+
+224 
+QVBoxLayout
+ *
+Ïyout
+ = 
+Ãw
+ QVBoxLayout;
+
+225 
+Ïyout
+->
+	`addWidg‘
+(
+kaoshiLab–
+);
+
+226 
+Ïyout
+->
+	`addWidg‘
+(
+kaoshiV›w
+);
+
+227 
+kaoshiPª–
+->
+	`£tLayout
+(
+Ïyout
+);
+
+228 
+	}
+}
+
+230 
+	gMašFÜm
+::
+	$upd©eFžeV›w
+()
+
+232 
+QMod–Index
+ 
+šdex
+ = 
+kaoshiV›w
+->
+	`cu¼’tIndex
+();
+
+233 ià(
+šdex
+.
+	`isV®id
+()) {
+
+234 
+QSqlRecÜd
+ 
+»cÜd
+ = 
+kaoshiMod–
+->
+	`»cÜd
+(
+šdex
+.
+	`row
+());
+
+235 
+QSŒšg
+ 
+id
+ = 
+»cÜd
+.
+	`v®ue
+("ksid").
+	`toSŒšg
+();
+
+236 
+d•¬tm’tMod–
+->
+	`£tFž‹r
+(
+	`QSŒšg
+("ksfže.ksid = \"%1\" ").
+	`¬g
+(
+id
+));
+
+238 
+d•¬tm’tLab–
+->
+	`£tText
+(
+	`Œ
+(" %1 æ–‡ä»¶ç®¡ç†")
+
+239 .
+	`¬g
+(
+»cÜd
+.
+	`v®ue
+("k¢ame").
+	`toSŒšg
+()));
+
+242 
+d•¬tm’tMod–
+->
+	`£tFž‹r
+("ksid = -1");
+
+243 
+d•¬tm’tLab–
+->
+	`£tText
+(
+	`Œ
+("è€ƒè¯•æ–‡ä»¶"));
+
+245 
+d•¬tm’tMod–
+->
+	`£Ëù
+();
+
+246 
+d•¬tm’tV›w
+->
+	`hÜizÚlH—d”
+()->
+	`£tVisibË
+(
+
+247 
+d•¬tm’tMod–
+->
+	`rowCouÁ
+() > 0);
+
+250 
 	}
 }
 
@@ -3043,9 +2887,17 @@ MAINFORM_H
 
 17 
 	mD•¬tm’t_LoÿtiÚId
- = 2
+ = 2,
 
-20 þas 
+18 
+	mfž•ubtime
+ = 3,
+
+19 
+	mwebadd»ss
+ = 4,
+
+22 þas 
 	cMašFÜm
  : 
 public
@@ -3053,131 +2905,169 @@ public
 QWidg‘
 
 
-22 
+24 
 Q_OBJECT
 
 
-24 
+26 
 public
 :
 
-25 
+27 
 MašFÜm
 ();
 
-27 
+29 
 ´iv©e
  
 	m¦Ùs
 :
 
-28 
-upd©eEm¶oy“V›w
-();
-
-29 
-addD•¬tm’t
-();
-
 30 
-d–‘eD•¬tm’t
+upd©eMsgV›w
 ();
 
 31 
+upd©eFžeV›w
+();
+
+32 
+addD•¬tm’t
+();
+
+33 
+d–‘eD•¬tm’t
+();
+
+34 
 ed™Em¶oy“s
 ();
 
-33 
+36 
 	m´iv©e
 :
 
-34 
+37 
 ü—‹D•¬tm’tPª–
 ();
 
-35 
+38 
 ü—‹Em¶oy“Pª–
 ();
 
-37 
+39 
+ü—‹KaoshiPª–
+();
+
+41 
 QSqlR–©iÚ®TabËMod–
  *
 	md•¬tm’tMod–
 ;
 
-38 
+42 
 QSqlR–©iÚ®TabËMod–
  *
 	mem¶oy“Mod–
 ;
 
-39 
+43 
+QSqlR–©iÚ®TabËMod–
+ *
+	mkaoshiMod–
+;
+
+45 
 QWidg‘
  *
 	md•¬tm’tPª–
 ;
 
-40 
+46 
 QWidg‘
  *
 	mem¶oy“Pª–
 ;
 
-41 
+47 
+QWidg‘
+ *
+	mkaoshiPª–
+;
+
+48 
 QLab–
  *
 	md•¬tm’tLab–
 ;
 
-42 
+49 
 QLab–
  *
 	mem¶oy“Lab–
 ;
 
-43 
+50 
+QLab–
+ *
+	mkaoshiLab–
+;
+
+52 
 QTabËV›w
  *
 	md•¬tm’tV›w
 ;
 
-44 
+53 
 QTabËV›w
  *
 	mem¶oy“V›w
 ;
 
-45 
+54 
+QTabËV›w
+ *
+	mkaoshiV›w
+;
+
+56 
 QS¶™‹r
  *
 	m¥l™‹r
 ;
 
-46 
+57 
+QS¶™‹r
+ *
+	mkaoshi¥l™‹r
+;
+
+59 
 QPushBu‰Ú
  *
 	maddBu‰Ú
 ;
 
-47 
+60 
 QPushBu‰Ú
  *
 	md–‘eBu‰Ú
 ;
 
-48 
+61 
 QPushBu‰Ú
  *
 	med™Bu‰Ú
 ;
 
-49 
+62 
 QPushBu‰Ú
  *
 	mqu™Bu‰Ú
 ;
 
-50 
+63 
 QDŸlogBu‰ÚBox
  *
 	mbu‰ÚBox

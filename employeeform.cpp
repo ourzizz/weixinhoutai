@@ -1,17 +1,16 @@
 #include <QtSql>
 #include <QtWidgets>
 #include "employeeform.h"
+#include <QMessageBox>
 
-EmployeeForm::EmployeeForm(int id, QWidget *parent)
+EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
     : QDialog(parent)
-{
-    nameEdit = new QLineEdit;
-
+{/*{{{*/
+    nameEdit = new QLineEdit; //姓名表单输入框
     nameLabel = new QLabel(tr("Na&me:"));
     nameLabel->setBuddy(nameEdit);
 
-    departmentComboBox = new QComboBox;
-
+    departmentComboBox = new QComboBox;/*{{{*/
     departmentLabel = new QLabel(tr("Depar&tment:"));
     departmentLabel->setBuddy(departmentComboBox);
 
@@ -22,7 +21,6 @@ EmployeeForm::EmployeeForm(int id, QWidget *parent)
     extensionLabel->setBuddy(extensionLineEdit);
 
     emailEdit = new QLineEdit;
-
     emailLabel = new QLabel(tr("&Email:"));
     emailLabel->setBuddy(emailEdit);
 
@@ -30,7 +28,6 @@ EmployeeForm::EmployeeForm(int id, QWidget *parent)
     startDateEdit->setCalendarPopup(true);
     QDate today = QDate::currentDate();
     startDateEdit->setDateRange(today.addDays(-90), today.addDays(90));
-
     startDateLabel = new QLabel(tr("&Start Date:"));
     startDateLabel->setBuddy(startDateEdit);
 
@@ -46,17 +43,19 @@ EmployeeForm::EmployeeForm(int id, QWidget *parent)
     buttonBox = new QDialogButtonBox;
     buttonBox->addButton(addButton, QDialogButtonBox::ActionRole);
     buttonBox->addButton(deleteButton, QDialogButtonBox::ActionRole);
-    buttonBox->addButton(closeButton, QDialogButtonBox::AcceptRole);
+    buttonBox->addButton(closeButton, QDialogButtonBox::AcceptRole);/*}}}*/
 
     tableModel = new QSqlRelationalTableModel(this);
-    tableModel->setTable("employee");
-    tableModel->setRelation(Employee_DepartmentId,
-                            QSqlRelation("department", "id", "name"));
-    tableModel->setSort(Employee_Name, Qt::AscendingOrder);
-    tableModel->select();
+    tableModel->setTable("ksmsg");
+    tableModel->setRelation(Msg_Fileid,
+                            QSqlRelation("ksfile", "ksfileid", "wjmc"));
+    tableModel->setFilter(QString("ksmsg.ksfileid = %1").arg(fileid));
+    //tableModel->setFilter(QString("ksmsg.ksfileid = 2"));
+    tableModel->setSort(Msg_Deadtime, Qt::AscendingOrder);
+    tableModel->select(); //这个和对话框绑定
 
     QSqlTableModel *relationModel =
-            tableModel->relationModel(Employee_DepartmentId);
+            tableModel->relationModel(Msg_Fileid);
     departmentComboBox->setModel(relationModel);
     departmentComboBox->setModelColumn(
             relationModel->fieldIndex("name"));
@@ -65,16 +64,16 @@ EmployeeForm::EmployeeForm(int id, QWidget *parent)
     mapper->setSubmitPolicy(QDataWidgetMapper::AutoSubmit);
     mapper->setModel(tableModel);
     mapper->setItemDelegate(new QSqlRelationalDelegate(this));
-    mapper->addMapping(nameEdit, Employee_Name);
-    mapper->addMapping(departmentComboBox, Employee_DepartmentId);
-    mapper->addMapping(extensionLineEdit, Employee_Extension);
-    mapper->addMapping(emailEdit, Employee_Email);
-    mapper->addMapping(startDateEdit, Employee_StartDate);
+    mapper->addMapping(nameEdit, Msg_Msgcontent);
+    mapper->addMapping(departmentComboBox, Msg_Fileid);
+    mapper->addMapping(extensionLineEdit, Msg_msgpubtime);
+    mapper->addMapping(emailEdit, Msg_Ksid);
+    mapper->addMapping(startDateEdit, Msg_Deadtime);
 
-    if (id != -1) {
+    if (id != -1) { //从msg窗口传过来的msg_id
         for (int row = 0; row < tableModel->rowCount(); ++row) {
             QSqlRecord record = tableModel->record(row);
-            if (record.value(Employee_Id).toInt() == id) {
+            if (record.value(Msg_Id).toInt() == id) {
                 mapper->setCurrentIndex(row);
                 break;
             }
@@ -127,16 +126,16 @@ EmployeeForm::EmployeeForm(int id, QWidget *parent)
     }
 
     setWindowTitle(tr("Edit Employees"));
-}
+}/*}}}*/
 
 void EmployeeForm::done(int result)
-{
+{/*{{{*/
     mapper->submit();
     QDialog::done(result);
-}
+}/*}}}*/
 
 void EmployeeForm::addEmployee()
-{
+{/*{{{*/
     int row = mapper->currentIndex();
     mapper->submit();
     tableModel->insertRow(row);
@@ -146,12 +145,12 @@ void EmployeeForm::addEmployee()
     extensionLineEdit->clear();
     startDateEdit->setDate(QDate::currentDate());
     nameEdit->setFocus();
-}
+}/*}}}*/
 
 void EmployeeForm::deleteEmployee()
-{
+{/*{{{*/
     int row = mapper->currentIndex();
     tableModel->removeRow(row);
     mapper->submit();
     mapper->setCurrentIndex(qMin(row, tableModel->rowCount() - 1));
-}
+}/*}}}*/

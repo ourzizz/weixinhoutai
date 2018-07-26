@@ -12,11 +12,11 @@ class QSqlRelationalTableModel;
 class QTableView;
 
 enum {
-    Department_Id = 0,
-    Department_Name = 1,
-    Department_LocationId = 2,
-    filepubtime = 3,
-    webaddress = 4,
+    Ksfile_ksfileid = 0,
+    Ksfile_ksid = 1,
+    Ksfile_wjmc = 2,
+    ksfile_filepubtime = 3,
+    Ksfile_webaddress = 4,
 };
 
 class MainForm : public QWidget
@@ -29,28 +29,28 @@ public:
 private slots:
     void updateMsgView();
     void updateFileView();
-    void addDepartment();
-    void deleteDepartment();
-    void editEmployees();
+    void addfile();
+    void deletefile();
+    void editmsgs();
 
 private:
-    void createDepartmentPanel();
-    void createEmployeePanel();
+    void createFilePanel();
+    void createMsgPanel();
     void createKaoshiPanel();
 
-    QSqlRelationalTableModel *departmentModel;
-    QSqlRelationalTableModel *employeeModel;
+    QSqlRelationalTableModel *fileModel;
+    QSqlRelationalTableModel *msgModel;
     QSqlRelationalTableModel *kaoshiModel;
 
-    QWidget *departmentPanel;
-    QWidget *employeePanel;
+    QWidget *filePanel;
+    QWidget *msgPanel;
     QWidget *kaoshiPanel;
-    QLabel *departmentLabel;
-    QLabel *employeeLabel;
+    QLabel *fileLabel;
+    QLabel *msgLabel;
     QLabel *kaoshiLabel;
 
-    QTableView *departmentView;
-    QTableView *employeeView;
+    QTableView *fileView;
+    QTableView *msgView;
     QTableView *kaoshiView;
 
     QSplitter *splitter;
