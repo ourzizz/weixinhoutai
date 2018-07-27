@@ -40,7 +40,9 @@ class FileForm : public QDialog
         QLabel *nameLabel;
         QLabel *pubTimeLabel;
         QLabel *webAddLabel;
+        QLabel *kaoshiLabel;
 
+        QComboBox *kaoshiComboBox;
         QLineEdit *nameEdit;
         QDateEdit *pubTimeEdit;
         QLineEdit *webAddEdit;

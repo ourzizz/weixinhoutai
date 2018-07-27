@@ -44,7 +44,7 @@ class EmployeeForm : public QDialog
         QLabel *startDateLabel;
         QLineEdit *nameEdit;
         QComboBox *departmentComboBox;
-        QLineEdit *extensionLineEdit;
+        QDateEdit *extensionLineEdit;
         QLineEdit *emailEdit;
         QDateEdit *startDateEdit;
         QPushButton *firstButton;

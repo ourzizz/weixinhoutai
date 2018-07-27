@@ -5,7 +5,7 @@
 
 EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
     : QDialog(parent)
-{/*{{{*/
+{/*{{{*///传入消息列表中的被选中行的消息id和消息所属文件的id号
     nameEdit = new QLineEdit; //姓名表单输入框
     nameLabel = new QLabel(tr("消息内容:"));
     nameLabel->setBuddy(nameEdit);
@@ -14,9 +14,10 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
     departmentLabel = new QLabel(tr("所属文件"));
     departmentLabel->setBuddy(departmentComboBox);
 
-    extensionLineEdit = new QLineEdit;
-    extensionLineEdit->setValidator(new QIntValidator(0, 99999, this));
-
+    extensionLineEdit = new QDateEdit;
+    extensionLineEdit->setCalendarPopup(true);
+    QDate today = QDate::currentDate();
+    extensionLineEdit->setDateRange(today.addDays(-90), today.addDays(90));
     extensionLabel = new QLabel(tr("发布时间"));
     extensionLabel->setBuddy(extensionLineEdit);
 
@@ -26,15 +27,10 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
 
     startDateEdit = new QDateEdit;
     startDateEdit->setCalendarPopup(true);
-    QDate today = QDate::currentDate();
+    //QDate today = QDate::currentDate();
     startDateEdit->setDateRange(today.addDays(-90), today.addDays(90));
     startDateLabel = new QLabel(tr("&失效时间:"));
     startDateLabel->setBuddy(startDateEdit);
-
-    //firstButton = new QPushButton(tr("<< &First"));
-    //previousButton = new QPushButton(tr("< &Previous"));
-    //nextButton = new QPushButton(tr("&Next >"));
-    //lastButton = new QPushButton(tr("&Last >>"));
 
     addButton = new QPushButton(tr("&Add"));
     deleteButton = new QPushButton(tr("&Delete"));
@@ -55,7 +51,8 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
 
     QSqlTableModel *relationModel =
             tableModel->relationModel(Msg_Fileid);
-    relationModel->setFilter(QString("ksfileid=%1").arg(fileid));
+    if(-1 != id)
+        relationModel->setFilter(QString("ksfileid=%1").arg(fileid));
     departmentComboBox->setModel(relationModel);
     departmentComboBox->setModelColumn(
             relationModel->fieldIndex("wjmc"));
@@ -84,27 +81,13 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
         //mapper->toFirst();
     }
 
-    //connect(firstButton, SIGNAL(clicked()), mapper, SLOT(toFirst()));
-    //connect(previousButton, SIGNAL(clicked()),
-    //mapper, SLOT(toPrevious()));
-    //connect(nextButton, SIGNAL(clicked()), mapper, SLOT(toNext()));
-    //connect(lastButton, SIGNAL(clicked()), mapper, SLOT(toLast()));
     connect(addButton, SIGNAL(clicked()), this, SLOT(addEmployee()));
     connect(deleteButton, SIGNAL(clicked()),
             this, SLOT(deleteEmployee()));
     connect(closeButton, SIGNAL(clicked()), this, SLOT(accept()));
 
-    //QHBoxLayout *topButtonLayout = new QHBoxLayout;
-    //topButtonLayout->setContentsMargins(20, 0, 20, 5);
-    //topButtonLayout->addStretch();
-    //topButtonLayout->addWidget(firstButton);
-    //topButtonLayout->addWidget(previousButton);
-    //topButtonLayout->addWidget(nextButton);
-    //topButtonLayout->addWidget(lastButton);
-    //topButtonLayout->addStretch();
 
     QGridLayout *mainLayout = new QGridLayout;
-    //mainLayout->addLayout(topButtonLayout, 0, 0, 1, 3);
     mainLayout->addWidget(nameLabel, 1, 0);
     mainLayout->addWidget(nameEdit, 1, 1, 1, 2);
     mainLayout->addWidget(departmentLabel, 2, 0);
@@ -121,14 +104,7 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
     mainLayout->setColumnStretch(2, 1);
     setLayout(mainLayout);
 
-    /*if (id == -1) {
-      nextButton->setFocus();
-      } else {
-      nameEdit->setFocus();
-      }*/
     nameEdit->setFocus();
-
-
     setWindowTitle(tr("消息管理"));
 }/*}}}*/
 

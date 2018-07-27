@@ -19,21 +19,21 @@ MainForm::MainForm()
     //kaoshisplitter = new QSplitter(Qt::Vertical);
     //kaoshisplitter->addWidget(kaoshiPanel);
 
-    addButton = new QPushButton(tr("&添加文件."));
-    deleteButton = new QPushButton(tr("&删除文件."));
+    //addButton = new QPushButton(tr("&添加文件."));
+    //deleteButton = new QPushButton(tr("&删除文件."));
     editButton = new QPushButton(tr("编辑消息"));
     editFileButton = new QPushButton(tr("编辑文件"));
     quitButton = new QPushButton(tr("&Quit"));
 
     buttonBox = new QDialogButtonBox;
-    buttonBox->addButton(addButton, QDialogButtonBox::ActionRole);
-    buttonBox->addButton(deleteButton, QDialogButtonBox::ActionRole);
+    //buttonBox->addButton(addButton, QDialogButtonBox::ActionRole);
+    //buttonBox->addButton(deleteButton, QDialogButtonBox::ActionRole);
     buttonBox->addButton(editButton, QDialogButtonBox::ActionRole);
     buttonBox->addButton(editFileButton, QDialogButtonBox::ActionRole);
     buttonBox->addButton(quitButton, QDialogButtonBox::AcceptRole);
 
-    connect(addButton, SIGNAL(clicked()), this, SLOT(addfile()));
-    connect(deleteButton, SIGNAL(clicked()), this, SLOT(deletefile()));
+    //connect(addButton, SIGNAL(clicked()), this, SLOT(addfile()));
+    //connect(deleteButton, SIGNAL(clicked()), this, SLOT(deletefile()));
     connect(editButton, SIGNAL(clicked()), this, SLOT(editmsgs()));
     connect(editFileButton, SIGNAL(clicked()), this, SLOT(editfile()));
     connect(quitButton, SIGNAL(clicked()), this, SLOT(close()));

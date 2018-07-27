@@ -4,10 +4,14 @@
 #include <QMessageBox>
 
 FileForm::FileForm(int fileid,QWidget *parent) : QDialog(parent)
-{/*{{{*/
+{/*{{{*/ //fileid为文件列表中传入的文件id
     nameEdit = new QLineEdit; //姓名表单输入框
     nameLabel = new QLabel(tr("文件名称:"));
     nameLabel->setBuddy(nameEdit);
+
+    kaoshiComboBox = new QComboBox;/*{{{*/ //下拉列表不用管
+    kaoshiLabel = new QLabel(tr("所属考试"));
+    kaoshiLabel->setBuddy(kaoshiComboBox);
 
     pubTimeEdit = new QDateEdit;
     pubTimeLabel = new QLabel(tr("发布时间"));
@@ -30,31 +34,43 @@ FileForm::FileForm(int fileid,QWidget *parent) : QDialog(parent)
 
     tableModel = new QSqlRelationalTableModel(this);/*{{{*/
     tableModel->setTable("ksfile");
-    //tableModel->setRelation(Ksfile_Ksfileid,
-                            //QSqlRelation("kstype", "ksid", "ksid"));
+    tableModel->setRelation(Ksfile_Ksid,
+                            QSqlRelation("kstype", "ksid", "ksname"));
     tableModel->setFilter(QString("ksfile.ksfileid = %1 ").arg(fileid));
     tableModel->select(); //这个和对话框绑定
+
+
+    QSqlTableModel *relationModel =
+            tableModel->relationModel(Ksfile_Ksid);
+    //if(-1 != id)
+        //relationModel->setFilter(QString("ksfileid=%1").arg(fileid));
+    kaoshiComboBox->setModel(relationModel);
+    kaoshiComboBox->setModelColumn(
+            //relationModel->fieldIndex("kstype.ksname"));
+            relationModel->fieldIndex("ksname"));
 
     mapper = new QDataWidgetMapper(this);
     mapper->setSubmitPolicy(QDataWidgetMapper::ManualSubmit);
     mapper->setModel(tableModel);
     mapper->setItemDelegate(new QSqlRelationalDelegate(this));
     mapper->addMapping(nameEdit, Ksfile_Wjmc);
+    mapper->addMapping(kaoshiComboBox, Ksfile_Ksid);
     mapper->addMapping(pubTimeEdit, Ksfile_Fileputime);
     mapper->addMapping(webAddEdit, Ksfile_Webaddress);
 
-    //if (fileid != -1) { //从msg窗口传过来的msg_id
-        //for (int row = 0; row < tableModel->rowCount(); ++row) {
-            //QSqlRecord record = tableModel->record(row);
-            //if (record.value(Ksfile_ksfileid).toInt() == fileid) {
-                //mapper->setCurrentIndex(row);
-                //break;
-            //}
-        //}
-    //} else {
-        //mapper->toFirst();
-    //}
-    mapper->setCurrentIndex(0);
+    if (fileid != -1) { //从msg窗口传过来的msg_id
+        for (int row = 0; row < tableModel->rowCount(); ++row) {
+            QSqlRecord record = tableModel->record(row);
+            if (record.value(Ksfile_Ksfileid).toInt() == fileid) {
+                mapper->setCurrentIndex(row);
+                break;
+            }
+        }
+    } else {
+        mapper->toFirst();
+        tableModel->insertRow(0);
+        mapper->setCurrentIndex(0);
+    }
 
     connect(addButton, SIGNAL(clicked()), this, SLOT(addFile()));
     connect(deleteButton, SIGNAL(clicked()),
@@ -68,9 +84,10 @@ FileForm::FileForm(int fileid,QWidget *parent) : QDialog(parent)
     mainLayout->addWidget(nameEdit, 1, 1, 1, 2);
     mainLayout->addWidget(pubTimeLabel, 2, 0);
     mainLayout->addWidget(pubTimeEdit, 2, 1, 1, 2);
-    //mainLayout->addWidget(departmentComboBox, 2, 1, 1, 2);
-    mainLayout->addWidget(webAddLabel, 3, 0);
-    mainLayout->addWidget(webAddEdit, 3, 1,1,2);
+    mainLayout->addWidget(kaoshiLabel, 3, 0);
+    mainLayout->addWidget(kaoshiComboBox, 3, 1, 1, 2);
+    mainLayout->addWidget(webAddLabel, 4, 0);
+    mainLayout->addWidget(webAddEdit, 4, 1,1,2);
 
     mainLayout->addWidget(buttonBox, 7, 0, 1, 3);
     mainLayout->setRowMinimumHeight(6, 10);
