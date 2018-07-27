@@ -3,13 +3,11 @@
 #include "FileForm.h"
 #include <QMessageBox>
 
-FileForm::FileForm(int fileid,QWidget *parent)
-    : QDialog(parent)
+FileForm::FileForm(int fileid,QWidget *parent) : QDialog(parent)
 {/*{{{*/
     nameEdit = new QLineEdit; //姓名表单输入框
     nameLabel = new QLabel(tr("文件名称:"));
     nameLabel->setBuddy(nameEdit);
-
 
     pubTimeEdit = new QDateEdit;
     pubTimeLabel = new QLabel(tr("发布时间"));
@@ -98,7 +96,7 @@ void FileForm::manualSubmit()
 void FileForm::addFile()
 {/*{{{*/
     int row = mapper->currentIndex();
-    //mapper->submit();
+    mapper->submit();
     tableModel->insertRow(row);
     mapper->setCurrentIndex(row);
 

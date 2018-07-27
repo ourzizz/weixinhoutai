@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.2.0, 2018-07-26T22:28:22. -->
+<!-- Written by QtCreator 4.2.0, 2018-07-27T08:26:52. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{7ba10880-e8ed-4bea-8041-c751589fc6a7}</value>
+  <value type="QByteArray">{71193292-1c70-4e89-81dc-93401fd400c2}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -286,7 +286,7 @@
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">bjksht</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">bjksht2</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Administrator/Desktop/qtdev/weixinhoutai/bjksht.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Qt/Qt5.7.1/5.7/mingw53_32/myproj/weixinhoutai/bjksht.pro</value>
     <value type="bool" key="QmakeProjectManager.QmakeRunConfiguration.UseLibrarySearchPath">true</value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.CommandLineArguments"></value>
     <value type="QString" key="Qt4ProjectManager.Qt4RunConfiguration.ProFile">bjksht.pro</value>

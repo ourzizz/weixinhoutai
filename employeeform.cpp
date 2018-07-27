@@ -55,6 +55,7 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
 
     QSqlTableModel *relationModel =
             tableModel->relationModel(Msg_Fileid);
+    relationModel->setFilter(QString("ksfileid=%1").arg(fileid));
     departmentComboBox->setModel(relationModel);
     departmentComboBox->setModelColumn(
             relationModel->fieldIndex("wjmc"));
@@ -77,13 +78,15 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
                 break;
             }
         }
-    } else {
-        mapper->toFirst();
+    } else {//id=-1表示没有在窗口选取任何行
+        tableModel->insertRow(0);
+        mapper->setCurrentIndex(0);
+        //mapper->toFirst();
     }
 
     //connect(firstButton, SIGNAL(clicked()), mapper, SLOT(toFirst()));
     //connect(previousButton, SIGNAL(clicked()),
-            //mapper, SLOT(toPrevious()));
+    //mapper, SLOT(toPrevious()));
     //connect(nextButton, SIGNAL(clicked()), mapper, SLOT(toNext()));
     //connect(lastButton, SIGNAL(clicked()), mapper, SLOT(toLast()));
     connect(addButton, SIGNAL(clicked()), this, SLOT(addEmployee()));
@@ -119,10 +122,10 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
     setLayout(mainLayout);
 
     /*if (id == -1) {
-        nextButton->setFocus();
-    } else {
-        nameEdit->setFocus();
-    }*/
+      nextButton->setFocus();
+      } else {
+      nameEdit->setFocus();
+      }*/
     nameEdit->setFocus();
 
 
