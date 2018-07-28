@@ -101,19 +101,22 @@ FileForm::FileForm(int fileid,QWidget *parent) : QDialog(parent)
 
 void FileForm::done(int result)
 {/*{{{*/ //所有关闭操作都会调用这个done函数，所以这里的submit要注释掉
-    mapper->submit();
+    if(!(nameEdit->text().isEmpty()))
+        mapper->submit();
     QDialog::done(result);
 }/*}}}*/
 
 void FileForm::manualSubmit()
 {
-    mapper->submit();
+    if(!(nameEdit->text().isEmpty()))
+        mapper->submit();
 }
 
 void FileForm::addFile()
 {/*{{{*/
     int row = mapper->currentIndex();
-    mapper->submit();
+    if(!(nameEdit->text().isEmpty()))
+        mapper->submit();
     tableModel->insertRow(row);
     mapper->setCurrentIndex(row);
 
@@ -127,6 +130,7 @@ void FileForm::deleteFile()
 {/*{{{*/
     int row = mapper->currentIndex();
     tableModel->removeRow(row);
-    mapper->submit();
+    if(!(nameEdit->text().isEmpty()))
+        mapper->submit();
     mapper->setCurrentIndex(qMin(row, tableModel->rowCount() - 1));
 }/*}}}*/

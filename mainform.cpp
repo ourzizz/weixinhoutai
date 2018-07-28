@@ -3,6 +3,7 @@
 #include <String>
 #include "employeeform.h"
 #include "fileform.h"
+#include "kaoshiform.h"
 #include "mainform.h"
 
 MainForm::MainForm()
@@ -11,42 +12,44 @@ MainForm::MainForm()
     createMsgPanel();
     createKaoshiPanel();
 
-    splitter = new QSplitter(Qt::Vertical);
-    splitter->setFrameStyle(QFrame::StyledPanel);
-    splitter->addWidget(filePanel);
-    splitter->addWidget(msgPanel);
-
-    //kaoshisplitter = new QSplitter(Qt::Vertical);
-    //kaoshisplitter->addWidget(kaoshiPanel);
-
+    editKaoshiButton = new QPushButton(tr("&编辑考试."));
     //addButton = new QPushButton(tr("&添加文件."));
-    //deleteButton = new QPushButton(tr("&删除文件."));
     editButton = new QPushButton(tr("编辑消息"));
     editFileButton = new QPushButton(tr("编辑文件"));
     quitButton = new QPushButton(tr("&Quit"));
 
+    editfilebuttonBox = new QDialogButtonBox;
+    editfilebuttonBox->addButton(editFileButton,QDialogButtonBox::ActionRole);
+
+    editkaoshibuttonBox = new QDialogButtonBox;
+    editkaoshibuttonBox->addButton(editKaoshiButton,QDialogButtonBox::ActionRole);
+
     buttonBox = new QDialogButtonBox;
-    //buttonBox->addButton(addButton, QDialogButtonBox::ActionRole);
-    //buttonBox->addButton(deleteButton, QDialogButtonBox::ActionRole);
     buttonBox->addButton(editButton, QDialogButtonBox::ActionRole);
-    buttonBox->addButton(editFileButton, QDialogButtonBox::ActionRole);
     buttonBox->addButton(quitButton, QDialogButtonBox::AcceptRole);
 
+    splitter = new QSplitter(Qt::Vertical);
+    splitter->setFrameStyle(QFrame::StyledPanel);
+    splitter->addWidget(filePanel);
+    splitter->addWidget(editfilebuttonBox);
+    splitter->addWidget(msgPanel);
+
     //connect(addButton, SIGNAL(clicked()), this, SLOT(addfile()));
-    //connect(deleteButton, SIGNAL(clicked()), this, SLOT(deletefile()));
+    connect(editKaoshiButton, SIGNAL(clicked()), this, SLOT(editkaoshi()));
     connect(editButton, SIGNAL(clicked()), this, SLOT(editmsgs()));
     connect(editFileButton, SIGNAL(clicked()), this, SLOT(editfile()));
     connect(quitButton, SIGNAL(clicked()), this, SLOT(close()));
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
     mainLayout->addWidget(kaoshiPanel);
+    mainLayout->addWidget(editkaoshibuttonBox);
+    buttonBox->addButton(quitButton, QDialogButtonBox::AcceptRole);
     mainLayout->addWidget(splitter);
     mainLayout->addWidget(buttonBox);
 
     setLayout(mainLayout);
 
-    setWindowTitle(tr("Staff Manager"));
-    //kaoshiView->setCurrentIndex(kaoshiModel->index(0, 0));
+    setWindowTitle(tr("后台管理"));
     fileView->setCurrentIndex(fileModel->index(0, 0));
 }/*}}}*/
 
@@ -145,16 +148,26 @@ void MainForm::editfile()
     form.exec();
     updateFileView();
 }/*}}}*/
+
+void MainForm::editkaoshi()
+{//弹出编辑框,这个函数在msgspanel没出来之前可以pass/*{{{*/
+    QString ksid = "";
+    QModelIndex index = kaoshiView->currentIndex();
+    if (index.isValid()) {
+        QSqlRecord record = kaoshiModel->record(index.row());
+        ksid = record.value(Kstype_Pinyin).toString();
+    }
+    KaoshiForm form(ksid,this);
+    form.exec();
+    updateKaoshiView();
+}/*}}}*/
+
 void MainForm::createFilePanel()
 {/*{{{*/
     filePanel = new QWidget;
     fileModel = new QSqlRelationalTableModel(this);
     fileModel->setTable("ksfile");
     fileModel->setSort(Ksfile_ksid, Qt::AscendingOrder);
-    //fileModel->setHeaderData(Ksfile_ksid, Qt::Horizontal,
-    //tr("ksid."));
-    //fileModel->setHeaderData(Ksfile_wjmc,
-    //Qt::Horizontal, tr("pubtime"));
     fileModel->select();
 
     fileView = new QTableView;
@@ -261,5 +274,24 @@ void MainForm::updateFileView()
     }
     fileModel->select();
     fileView->horizontalHeader()->setVisible(
+            fileModel->rowCount() > 0);
+}/*}}}*/
+
+void MainForm::updateKaoshiView()
+{/*{{{*/
+    //QModelIndex index = kaoshiView->currentIndex(); //获得当前行号
+    //if (index.isValid()) {
+        //QSqlRecord record = kaoshiModel->record(index.row()); //获得Depview的当前记录
+        //QString id = record.value("ksid").toString();
+        ////kaoshiModel->setFilter(QString("ksfile.ksid = \"%1\" ").arg(id));
+        ////kaoshiLabel->setText(tr(" %1 考试管理")
+                ////.arg(record.value("ksname").toString())); //设置标题
+        ////.arg(id)); 设置标题
+    //} else {
+        //fileModel->setFilter("ksid = -1");
+        //fileLabel->setText(tr("考试文件"));
+    //}
+    kaoshiModel->select();
+    kaoshiView->horizontalHeader()->setVisible(
             fileModel->rowCount() > 0);
 }/*}}}*/

@@ -28,11 +28,13 @@ public:
 
 private slots:
     void updateMsgView();
+    void updateKaoshiView();
     void updateFileView();
     void addfile();
     void deletefile();
     void editmsgs();
     void editfile();
+    void editkaoshi();
 
 private:
     void createFilePanel();
@@ -57,12 +59,14 @@ private:
     QSplitter *splitter;
     QSplitter *kaoshisplitter;
 
-    QPushButton *addButton;
-    QPushButton *deleteButton;
+    QPushButton *editKaoshiButton;
+    //QPushButton *deleteButton;
     QPushButton *editButton;
     QPushButton *editFileButton;
     QPushButton *quitButton;
     QDialogButtonBox *buttonBox;
+    QDialogButtonBox *editfilebuttonBox;
+    QDialogButtonBox *editkaoshibuttonBox;
 };
 
 #endif

@@ -3,8 +3,8 @@
 #include "employeeform.h"
 #include <QMessageBox>
 
-EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
-    : QDialog(parent)
+EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent) 
+    : QDialog(parent) //消息类
 {/*{{{*///传入消息列表中的被选中行的消息id和消息所属文件的id号
     nameEdit = new QLineEdit; //姓名表单输入框
     nameLabel = new QLabel(tr("消息内容:"));
@@ -17,7 +17,7 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
     extensionLineEdit = new QDateEdit;
     extensionLineEdit->setCalendarPopup(true);
     QDate today = QDate::currentDate();
-    extensionLineEdit->setDateRange(today.addDays(-90), today.addDays(90));
+    extensionLineEdit->setDateRange(today.addDays(-290), today.addDays(290));
     extensionLabel = new QLabel(tr("发布时间"));
     extensionLabel->setBuddy(extensionLineEdit);
 
@@ -31,7 +31,6 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
     startDateEdit->setDateRange(today.addDays(-90), today.addDays(90));
     startDateLabel = new QLabel(tr("&失效时间:"));
     startDateLabel->setBuddy(startDateEdit);
-
     addButton = new QPushButton(tr("&Add"));
     deleteButton = new QPushButton(tr("&Delete"));
     closeButton = new QPushButton(tr("&Close"));
@@ -110,14 +109,16 @@ EmployeeForm::EmployeeForm(int id,int fileid,QWidget *parent)
 
 void EmployeeForm::done(int result)
 {/*{{{*/
-    mapper->submit();
+    if(!(nameEdit->text().isEmpty()))
+        mapper->submit();
     QDialog::done(result);
 }/*}}}*/
 
 void EmployeeForm::addEmployee()
 {/*{{{*/
     int row = mapper->currentIndex();
-    mapper->submit();
+    if(!(nameEdit->text().isEmpty()))
+        mapper->submit();
     tableModel->insertRow(row);
     mapper->setCurrentIndex(row);
 
@@ -130,7 +131,8 @@ void EmployeeForm::addEmployee()
 void EmployeeForm::deleteEmployee()
 {/*{{{*/
     int row = mapper->currentIndex();
-    tableModel->removeRow(row);
+    if(!(nameEdit->text().isEmpty()))
+        tableModel->removeRow(row);
     mapper->submit();
     mapper->setCurrentIndex(qMin(row, tableModel->rowCount() - 1));
 }/*}}}*/
