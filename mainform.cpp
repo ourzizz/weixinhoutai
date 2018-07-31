@@ -1,6 +1,7 @@
 #include <QtGui>
 #include <QtSql>
 #include <String>
+#include <QTcpSocket>
 #include "employeeform.h"
 #include "fileform.h"
 #include "kaoshiform.h"
@@ -12,11 +13,14 @@ MainForm::MainForm()
     createMsgPanel();
     createKaoshiPanel();
 
+    socket = new QTcpSocket();
+
     editKaoshiButton = new QPushButton(tr("&编辑考试."));
     //addButton = new QPushButton(tr("&添加文件."));
     editButton = new QPushButton(tr("编辑消息"));
     editFileButton = new QPushButton(tr("编辑文件"));
     quitButton = new QPushButton(tr("&Quit"));
+    updataHomePageButton = new QPushButton(tr("更新首页"));
 
     editfilebuttonBox = new QDialogButtonBox;
     editfilebuttonBox->addButton(editFileButton,QDialogButtonBox::ActionRole);
@@ -25,8 +29,9 @@ MainForm::MainForm()
     editkaoshibuttonBox->addButton(editKaoshiButton,QDialogButtonBox::ActionRole);
 
     buttonBox = new QDialogButtonBox;
-    buttonBox->addButton(editButton, QDialogButtonBox::ActionRole);
+    buttonBox->addButton(updataHomePageButton, QDialogButtonBox::AcceptRole);
     buttonBox->addButton(quitButton, QDialogButtonBox::AcceptRole);
+    buttonBox->addButton(editButton, QDialogButtonBox::ActionRole);
 
     splitter = new QSplitter(Qt::Vertical);
     splitter->setFrameStyle(QFrame::StyledPanel);
@@ -39,6 +44,7 @@ MainForm::MainForm()
     connect(editButton, SIGNAL(clicked()), this, SLOT(editmsgs()));
     connect(editFileButton, SIGNAL(clicked()), this, SLOT(editfile()));
     connect(quitButton, SIGNAL(clicked()), this, SLOT(close()));
+    connect(updataHomePageButton, SIGNAL(clicked()), this, SLOT(callserver()));
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
     mainLayout->addWidget(kaoshiPanel);
@@ -244,7 +250,7 @@ void MainForm::createKaoshiPanel()
     kaoshiView->setEditTriggers(QAbstractItemView::NoEditTriggers);
     kaoshiView->horizontalHeader()->setStretchLastSection(true);
 
-    kaoshiLabel = new QLabel(tr("E&mployees"));
+    kaoshiLabel = new QLabel(tr("考试版面"));
     kaoshiLabel->setBuddy(kaoshiView);
 
     connect(kaoshiView->selectionModel(),
@@ -295,3 +301,10 @@ void MainForm::updateKaoshiView()
     kaoshiView->horizontalHeader()->setVisible(
             fileModel->rowCount() > 0);
 }/*}}}*/
+
+void MainForm::callserver()
+{
+    socket->connectToHost("58.87.119.233",9999);
+    socket->write("UpdateAllPage");
+    socket->disconnectFromHost();
+}

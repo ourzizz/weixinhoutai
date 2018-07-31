@@ -1,6 +1,7 @@
 TEMPLATE      = app
 QT           += sql
 QT           += widgets 
+QT           += network 
 HEADERS       = employeeform.h \
                 mainform.h \
     fileform.h \

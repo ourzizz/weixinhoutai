@@ -2,6 +2,7 @@
 #define MAINFORM_H
 
 #include <QWidget>
+#include <QTcpSocket>
 
 class QDialogButtonBox;
 class QLabel;
@@ -35,6 +36,7 @@ private slots:
     void editmsgs();
     void editfile();
     void editkaoshi();
+    void callserver();
 
 private:
     void createFilePanel();
@@ -64,9 +66,11 @@ private:
     QPushButton *editButton;
     QPushButton *editFileButton;
     QPushButton *quitButton;
+    QPushButton *updataHomePageButton;
     QDialogButtonBox *buttonBox;
     QDialogButtonBox *editfilebuttonBox;
     QDialogButtonBox *editkaoshibuttonBox;
+    QTcpSocket *socket;
 };
 
 #endif
